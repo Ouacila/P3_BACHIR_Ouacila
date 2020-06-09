@@ -1,0 +1,205 @@
+a:link 
+{ 
+text-decoration:none; 
+} 
+body{
+    margin: 0;
+    background-color: #fff5fe;
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #579C87;
+    margin-bottom: 30px;
+    h1{
+        color: #e5c54f;
+        font-family: 'Rubik', sans-serif;
+        font-size: 60px;
+        text-align: center;
+        margin: auto;
+        padding-top: 70px;
+
+    } 
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #579C87;
+    position: fixed;
+    bottom: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    h3{
+        display: block;
+        color: #e5c54f;
+        font-family: 'Rubik', sans-serif;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+section{
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-left: 50px;
+
+    h2{
+        font-family:'Croissant One', cursive;
+        font-size: 3rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-linear-gradient(left,#e2943f, #bc7b9c, #905cff);
+        text-align: center;
+        margin: auto;
+    }
+    .Entrée{
+        margin-bottom: 20px;
+        margin-top: 100px;
+        .Titre{
+        width: 90%;
+        display: inline-flex;
+        margin-top: 50px;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    
+        .menuba1{
+        transform: scale(1.4,0.8);
+        transform-origin: left;
+        -webkit-transform: scale(1.4,0.8);
+        -moz-transform: scale(1.4,0.8);
+        -ms-transform: scale(1.4,0.8);
+        -o-transform: scale(1.4,0.8);
+        margin-right: 130px;
+}
+        .menuba2{
+        transform: scale(1.4,0.8);
+        transform-origin: left;
+        -webkit-transform: scale(1.4,0.8);
+        -moz-transform: scale(1.4,0.8);
+        -ms-transform: scale(1.4,0.8);
+        -o-transform: scale(1.4,0.8);
+}
+        h3{
+        text-align: center;
+        margin: auto;
+        font-family:  'Roboto Slab', serif;
+        color: #e2943f;
+        font-size: 1.5rem;
+    }
+}
+        .description{
+            font-family:'Roboto Slab', serif;
+            font-size: 1.5rem;
+            color: #e2943f;
+            margin-left: 50px;
+        }
+        .prix{
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.5rem;
+            color: #e2943f;
+            float: right;
+            margin-right: 100px;
+            margin-top: -20px;
+        }
+    }
+    .Plat{
+        margin-bottom: 20px;
+        .Titre{
+            width: 90%;
+            display: inline-flex;
+            margin-top: 50px;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .menubb1{
+            transform: scale(1.4,0.8);
+            transform-origin: left;
+            -webkit-transform: scale(1.4,0.8);
+            -moz-transform: scale(1.4,0.8);
+            -ms-transform: scale(1.4,0.8);
+            -o-transform: scale(1.4,0.8);
+            float: left;
+            margin-right: 100px;
+}
+        .menubb2{
+            transform: scale(1.4,0.8);
+            transform-origin: left;
+            -webkit-transform: scale(1.4,0.8);
+            -moz-transform: scale(1.4,0.8);
+            -ms-transform: scale(1.4,0.8);
+            -o-transform: scale(1.4,0.8);
+            float: right;
+}
+        h3{
+            text-align: center;
+            margin: auto;
+            font-family:  'Roboto Slab', serif;
+            color: #bc7b9c;
+            font-size: 1.5rem;
+
+        }
+        .description{
+            font-family:'Roboto Slab', serif;
+            font-size: 1.5rem;
+            color: #bc7b9c;
+            margin-left: 50px;
+        }
+        .prix{
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.5rem;
+            color: #bc7b9c;
+            float: right;
+            margin-right: 100px;
+            margin-top: -30px;
+        }
+    }
+    .Dessert{
+        margin-bottom: 20px;
+        .Titre{
+            width: 90%;
+            display: inline-flex;
+            margin-top: 50px;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            .menubc1{
+                transform: scale(1.4,0.8);
+                transform-origin: left;
+                margin-right: 100px;
+                -webkit-transform: scale(1.4,0.8);
+                -moz-transform: scale(1.4,0.8);
+                -ms-transform: scale(1.4,0.8);
+                -o-transform: scale(1.4,0.8);
+}
+            .menubc2{
+                transform: scale(1.4,0.8);
+                transform-origin: left;
+                -webkit-transform: scale(1.4,0.8);
+                -moz-transform: scale(1.4,0.8);
+                -ms-transform: scale(1.4,0.8);
+                -o-transform: scale(1.4,0.8);
+}
+            h3{
+                text-align: center;
+                margin: auto;
+                font-family:  'Roboto Slab', serif;
+                color: #905cff;
+                font-size: 1.5rem;
+            }
+        }
+            .description{
+                font-family:'Roboto Slab', serif;
+                font-size: 1.5rem;
+                color: #905cff;
+                margin-left: 50px;
+            }
+            .prix{
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.5rem;
+                color: #905cff;
+                float: right;
+                margin-right: 100px;                
+            }
+}
+}
