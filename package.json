@@ -1,0 +1,19 @@
+{
+  "name": "p3_bachir_ouacila",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch menuc.scss:menuc.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ouacila/P3_BACHIR_Ouacila.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ouacila/P3_BACHIR_Ouacila/issues"
+  },
+  "homepage": "https://github.com/Ouacila/P3_BACHIR_Ouacila#readme"
+}
