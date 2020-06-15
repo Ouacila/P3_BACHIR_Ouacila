@@ -2,6 +2,7 @@ a:link
 { 
 text-decoration:none; 
 } 
+/*En tête*/
 header{
     width: 100%;
     height: 200px;
@@ -16,6 +17,7 @@ header{
 
     } 
 }
+/*Pied de page*/
 footer{
     width: 100%;
     height: 100px;
@@ -38,6 +40,7 @@ body{
     background-color: #fcdfdb;
     margin: 0;
 }
+/*Section principale avec titre du menu 1*/
 section{
     margin-bottom: 150px;
     width: 90%;
@@ -57,15 +60,17 @@ section{
 }
 h2{
     font-family: 'Devonshire',sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #3d1319;
     text-align: center;
     margin: auto;
 }
 }
+/*Mise en page des différents articles: titres et images côtés*/
 .Entrée, .Plat, .Dessert{
     width: 80%;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 .Titre{
     width: 100%;
@@ -75,16 +80,19 @@ h2{
     margin-bottom: 30px;
 
     .menua1{
-        margin-left: 30px;
         transform: scale(1.6, 1);
         transform-origin: left;
-        margin-right: 160px;
+        margin-right: 165px;
+        margin-top: 10px;
         -webkit-transform: scale(1.6, 1);
         -moz-transform: scale(1.6, 1);
         -ms-transform: scale(1.6, 1);
         -o-transform: scale(1.6, 1);
+
+        
 }
     .menua2{
+        margin-top: 10px;
         transform: scale(1.6,0.7);
         transform-origin: left;
         -webkit-transform: scale(1.6,0.7);
@@ -96,50 +104,53 @@ h2{
     h3{
         display: block;
         font-family: 'Architects Daughter', cursive;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
         margin: auto;
     }
 }
-.description{
-    display: block;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 20px;
-    color: #3d1319;
-    margin-left: 40px;
-
-}
-.prix{
-    display: block;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    color: #3d1319;
-    float: right;
-    margin-right: -160px;
-    margin-top: -20px;
-
-}
-.Pied{
+/*Corps des articles: même configuration*/
+.intitule{
     display: inline-flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    .description{
+        display: block;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        color: #3d1319;
+
+    }
+    .prix{
+        display: block;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        font-weight: bold;
+        color: #3d1319;
+        position: absolute;
+        right: 120px;
+
     
+    }
+/* Bas de page menu1 avec la note de musique*/
     h4{
+        display: inline-flex;
+        font-family: 'Devonshire', sans-serif;
+        font-size: 3rem;
+        color: #3d1319;
+        width: 60%;
         text-align: center;
         margin: auto;
-        font-family: 'Devonshire', sans-serif;
-        font-size: 2rem;
-        color: #3d1319;
 
     .fa-music {
         display: block;
-        text-align: center;
-        margin: auto;
-        font-size: 3rem;
+        font-size: 4rem;
+        margin-top: 5px;
+        margin-right: 15px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient (right, #f39c7d, #f1585d, #f15c61);
 }
-}
-}
+    }

@@ -6,6 +6,7 @@ body{
     margin: 0;
     background-color: #fdfffd;
 }
+/*En tête*/
 header{
     width: 100%;
     height: 200px;
@@ -21,6 +22,7 @@ header{
 
     } 
 }
+/*Pied de page*/
 footer{
     width: 100%;
     height: 100px;
@@ -39,6 +41,7 @@ footer{
         padding-left: 20px;
     }
 }
+/* Section princpale et titre du menu 4*/
 section{
     width: 90%;
     margin-bottom: 150px;
@@ -51,6 +54,7 @@ section{
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient(left,#479c3e, #8fcf73, #c2ff87);
     }
+/*Mise en page des différents articles: titre et images côtés*/
     .Entrée, .Plat, .Dessert{
         width: 100%;
         margin-left: 100px;
@@ -106,20 +110,43 @@ section{
             font-size: 1.4rem;
         }
     }
+    /* Corps des articles*/
+    .intitulea{
+        display: inline-flex;
+        justify-content: space-around;
+        width: 90%;
+
     .description{
         font-family: 'Balsamiq Sans', cursive;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: black;
-        line-height: 50px;
-        margin-left: 100px;
     
     }
     .prix{
         font-family: 'Balsamiq Sans', cursive;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: black;
         float: right;
-        margin-right: 200px;
-        margin-top: -40px;
+        margin-left: 130px;
+    }
+    }
+
+    }
+    .intitule{
+        display: inline-flex;
+        justify-content: space-around;
+        width: 90%;
+
+    .description{
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 1.5rem;
+        color: black;
+    
+    }
+    .prix{
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 1.5rem;
+        color: black;
+        float: right;
     }
 }

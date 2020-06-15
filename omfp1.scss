@@ -23,7 +23,7 @@ header{
     } 
 }
 /* Bouton en bas de page*/
-.btn{
+aside{
     width: 35%;
     height: 70px;
     background-color: #579C87;
@@ -35,8 +35,29 @@ header{
         color: #e5c54f;
         font-family: 'Rubik', sans-serif;
         font-size: 40px;
-        padding-top: 8px;
+        padding-top: 10px;
+}
     }
+          span{
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            display: inline-block;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transition: 3000ms;
+            -webkit-transition: 3000ms;
+            -moz-transition: 3000ms;
+            -ms-transition: 3000ms;
+            -o-transition: 3000ms;
 }
 /* Pied de page avec deux "boutons"*/
 footer{
@@ -147,7 +168,7 @@ footer{
         height: 550px;
         background-color: #fdfffd;
         text-align: center;
-    h2{
+        h2{
         margin-top: 190px;
         font-family: 'Kaushan Script', cursive;
         font-size: 2rem;
@@ -160,5 +181,6 @@ footer{
         font-size: 3rem;
         color: #7cc463;
     }
-    }
+
+}
 }

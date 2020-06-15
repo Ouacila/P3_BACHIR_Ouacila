@@ -8,6 +8,7 @@ body {
   background-color: #fdfffd;
 }
 
+/*En tête*/
 header {
   width: 100%;
   height: 200px;
@@ -24,6 +25,7 @@ header h1 {
   padding-top: 70px;
 }
 
+/*Pied de page*/
 footer {
   width: 100%;
   height: 100px;
@@ -48,9 +50,12 @@ footer h3 {
   padding-left: 20px;
 }
 
+/* Section princpale et titre du menu 4*/
 section {
   width: 90%;
   margin-bottom: 150px;
+  /*Mise en page des différents articles: titre et images côtés*/
+  /* Corps des articles*/
 }
 
 section h2 {
@@ -130,20 +135,48 @@ section .Titre h3 {
   font-size: 1.4rem;
 }
 
-section .description {
-  font-family: 'Balsamiq Sans', cursive;
-  font-size: 1.4rem;
-  color: black;
-  line-height: 50px;
-  margin-left: 100px;
+section .intitulea {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
 }
 
-section .prix {
+section .intitulea .description {
   font-family: 'Balsamiq Sans', cursive;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+section .intitulea .prix {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.5rem;
   color: black;
   float: right;
-  margin-right: 200px;
-  margin-top: -40px;
+  margin-left: 130px;
+}
+
+.intitule {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+.intitule .description {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.intitule .prix {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.5rem;
+  color: black;
+  float: right;
 }
 /*# sourceMappingURL=menud.css.map */
