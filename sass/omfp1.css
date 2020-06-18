@@ -24,7 +24,7 @@ header h1 {
   padding-top: 70px;
 }
 
-/* Bouton en bas de page*/
+/* Bouton en bas de page +pts de suspensions*/
 aside {
   width: 35%;
   height: 70px;
@@ -90,7 +90,7 @@ aside p:after {
   }
 }
 
-/* Pied de page avec deux "boutons"*/
+/* Pied de page avec deux "boutons" +effet wiggle*/
 footer {
   width: 100%;
   height: 100px;
@@ -175,6 +175,8 @@ footer h3:hover {
   height: 550px;
   background-color: #fcdfdb;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
 }
 
 .Article1 .Menua .fa-music {
@@ -203,6 +205,8 @@ footer h3:hover {
   height: 550px;
   background-color: #fff5fe;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
 }
 
 .Article1 .Menub h2 {
@@ -242,6 +246,8 @@ footer h3:hover {
   height: 550px;
   background-color: #f9F9F9;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
 }
 
 .Article2 .Menuc h2 {
@@ -265,6 +271,8 @@ footer h3:hover {
   height: 550px;
   background-color: #fdfffd;
   text-align: center;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
 }
 
 .Article2 .Menud h2 {

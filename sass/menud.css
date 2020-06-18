@@ -120,48 +120,16 @@ section .Titre {
   margin-bottom: 30px;
 }
 
-section .Titre .menuda1 {
-  transform: scale(1.2, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.2, 1);
-  -moz-transform: scale(1.2, 1);
-  -ms-transform: scale(1.2, 1);
-  -o-transform: scale(1.2, 1);
-  margin-right: 140px;
+section .Titre .menuda1 img, section .Titre .menuda2 img {
+  width: 120%;
+  height: 100%;
+  margin-left: 15px;
 }
 
-section .Titre .menuda2 {
-  transform: scale(1.2, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.2, 1);
-  -moz-transform: scale(1.2, 1);
-  -ms-transform: scale(1.2, 1);
-  -o-transform: scale(1.2, 1);
-  margin-left: 100px;
-}
-
-section .Titre .menud1 {
-  transform: scale(1.2, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.2, 1);
-  -moz-transform: scale(1.2, 1);
-  -ms-transform: scale(1.2, 1);
-  -o-transform: scale(1.2, 1);
-  margin-right: 100px;
-}
-
-section .Titre .menud2 {
-  transform: scale(1.2, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.2, 1);
-  -moz-transform: scale(1.2, 1);
-  -ms-transform: scale(1.2, 1);
-  -o-transform: scale(1.2, 1);
-  margin-left: 50px;
+section .Titre .menud1 img, section .Titre .menud2 img {
+  width: 105%;
+  height: 100%;
+  margin-left: 10px;
 }
 
 section .Titre h3 {
@@ -170,6 +138,8 @@ section .Titre h3 {
   font-family: 'Balsamiq Sans', cursive;
   color: black;
   font-size: 1.4rem;
+  padding-left: 130px;
+  padding-right: 100px;
 }
 
 section .intitulea {
@@ -222,8 +192,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 20%;
-  left: 550px;
+  width: 17%;
+  left: 610px;
 }
 
 h3:after {
@@ -231,7 +201,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 550px;
+  left: 610px;
   position: absolute;
   background: #7cc463;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;

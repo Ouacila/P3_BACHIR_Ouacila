@@ -133,35 +133,22 @@ section h2 {
   margin-bottom: 30px;
 }
 
-.Titre .menua1 {
-  transform: scale(1.6, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  margin-right: 165px;
-  margin-top: 10px;
-  -webkit-transform: scale(1.6, 1);
-  -moz-transform: scale(1.6, 1);
-  -ms-transform: scale(1.6, 1);
-  -o-transform: scale(1.6, 1);
+.Titre .menua1 img {
+  width: 160%;
 }
 
-.Titre .menua2 {
+.Titre .menua2 img {
+  width: 160%;
+  height: 60%;
   margin-top: 10px;
-  transform: scale(1.6, 0.7);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.6, 0.7);
-  -moz-transform: scale(1.6, 0.7);
-  -ms-transform: scale(1.6, 0.7);
-  -o-transform: scale(1.6, 0.7);
 }
 
 .Titre h3 {
-  display: block;
   font-family: 'Architects Daughter', cursive;
   font-size: 2rem;
   text-align: center;
   margin: auto;
+  padding-left: 150px;
 }
 
 /*Corps des articles: même configuration*/
@@ -220,8 +207,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 25%;
-  left: 550px;
+  width: 20%;
+  left: 570px;
 }
 
 h3:after {
@@ -229,7 +216,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 550px;
+  left: 570px;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;

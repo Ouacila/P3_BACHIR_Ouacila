@@ -127,25 +127,14 @@ section .Entrée .Titre {
   margin-bottom: 30px;
 }
 
-section .Entrée .menuba1 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
-  margin-right: 130px;
+section .Entrée .menuba1 img {
+  width: 140%;
+  height: 80%;
 }
 
-section .Entrée .menuba2 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
+section .Entrée .menuba2 img {
+  width: 140%;
+  height: 80%;
 }
 
 section .Entrée h3 {
@@ -154,6 +143,7 @@ section .Entrée h3 {
   font-family: 'Roboto Slab', serif;
   color: #e2943f;
   font-size: 1.5rem;
+  padding-left: 120px;
 }
 
 section .Entrée .intitule {
@@ -195,27 +185,14 @@ section .Plat .Titre {
   margin-bottom: 30px;
 }
 
-section .Plat .menubb1 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
-  float: left;
-  margin-right: 100px;
+section .Plat .menubb1 img {
+  width: 140%;
+  height: 80%;
 }
 
-section .Plat .menubb2 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
-  float: right;
+section .Plat .menubb2 img {
+  width: 140%;
+  height: 80%;
 }
 
 section .Plat h3 {
@@ -224,6 +201,7 @@ section .Plat h3 {
   font-family: 'Roboto Slab', serif;
   color: #bc7b9c;
   font-size: 1.5rem;
+  padding-left: 100px;
 }
 
 section .Plat .intitule {
@@ -265,25 +243,14 @@ section .Dessert .Titre {
   margin-bottom: 30px;
 }
 
-section .Dessert .Titre .menubc1 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  margin-right: 100px;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
+section .Dessert .Titre .menubc1 img {
+  width: 140%;
+  height: 80%;
 }
 
-section .Dessert .Titre .menubc2 {
-  transform: scale(1.4, 0.8);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 0.8);
-  -moz-transform: scale(1.4, 0.8);
-  -ms-transform: scale(1.4, 0.8);
-  -o-transform: scale(1.4, 0.8);
+section .Dessert .Titre .menubc2 img {
+  width: 140%;
+  height: 80%;
 }
 
 section .Dessert .Titre h3 {
@@ -292,6 +259,7 @@ section .Dessert .Titre h3 {
   font-family: 'Roboto Slab', serif;
   color: #905cff;
   font-size: 1.5rem;
+  padding-left: 100px;
 }
 
 section .Dessert .description {

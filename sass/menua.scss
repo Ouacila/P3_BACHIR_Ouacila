@@ -91,34 +91,21 @@ h2{
     justify-content: space-around;
     margin-bottom: 30px;
 
-    .menua1{
-        transform: scale(1.6, 1);
-        transform-origin: left;
-        margin-right: 165px;
-        margin-top: 10px;
-        -webkit-transform: scale(1.6, 1);
-        -moz-transform: scale(1.6, 1);
-        -ms-transform: scale(1.6, 1);
-        -o-transform: scale(1.6, 1);
-
-        
+    .menua1 img{
+       width: 160%;
 }
-    .menua2{
-        margin-top: 10px;
-        transform: scale(1.6,0.7);
-        transform-origin: left;
-        -webkit-transform: scale(1.6,0.7);
-        -moz-transform: scale(1.6,0.7);
-        -ms-transform: scale(1.6,0.7);
-        -o-transform: scale(1.6,0.7);
+    .menua2 img{
+       width: 160%;
+       height: 60%;
+       margin-top: 10px;
 }
 
     h3{
-        display: block;
         font-family: 'Architects Daughter', cursive;
         font-size: 2rem;
         text-align: center;
         margin: auto;
+        padding-left: 150px;
     }
 }
 /*Corps des articles: même configuration*/
@@ -171,15 +158,15 @@ h3{
     &:hover{
 
         &:after {
-          width:25%;
-          left: 550px;
+          width:20%;
+          left: 570px;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 550px;
+          left: 570px;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;

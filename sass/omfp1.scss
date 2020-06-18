@@ -22,7 +22,7 @@ header{
 
     } 
 }
-/* Bouton en bas de page*/
+/* Bouton en bas de page +pts de suspensions*/
 aside{
     width: 35%;
     height: 70px;
@@ -59,7 +59,7 @@ aside{
             }
 }
     }
-/* Pied de page avec deux "boutons"*/
+/* Pied de page avec deux "boutons" +effet wiggle*/
 footer{
     width: 100%;
     height: 100px;
@@ -105,6 +105,7 @@ footer{
         height: 550px;
         background-color: #fcdfdb;
         text-align: center;
+        box-shadow: 2px 2px 2px grey;
         .fa-music{
             margin-top: 120px;
             font-size: 3rem;
@@ -129,6 +130,7 @@ footer{
         height: 550px;
         background-color: #fff5fe;
         text-align: center;
+        box-shadow: 2px 2px 2px grey;
         h2{
             margin-top: 190px;
             font-family: 'Croissant One', cursive;
@@ -160,6 +162,7 @@ footer{
         height: 550px;
         background-color: #f9F9F9;
         text-align: center;
+        box-shadow: 2px 2px 2px grey;
         h2{
             margin-top: 190px;
             font-family: 'Dancing Script', cursive;
@@ -180,6 +183,7 @@ footer{
         height: 550px;
         background-color: #fdfffd;
         text-align: center;
+        box-shadow: 2px 2px 2px grey;
         h2{
         margin-top: 190px;
         font-family: 'Kaushan Script', cursive;

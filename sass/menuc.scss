@@ -77,32 +77,23 @@ section{
         margin-top: 70px;
         margin-bottom: 30px;
 
-        .menuc1{
-                transform: scale(1.4,1);
-                transform-origin: left;
-                -webkit-transform: scale(1.4,1);
-                -moz-transform: scale(1.4,1);
-                -ms-transform: scale(1.4,1);
-                -o-transform: scale(1.4,1);
-                margin-right: 170px;
-                margin-top: 5px;
+        .menuc1 img{
+            width: 130%;
+            height: 110%;
 }
-        .menuc2{
-                transform: scale(1.4,1);
-                transform-origin: left;
-                -webkit-transform: scale(1.4,1);
-                -moz-transform: scale(1.4,1);
-                -ms-transform: scale(1.4,1);
-                -o-transform: scale(1.4,1);
-                margin-top: 10px;
-                margin-left: 20px;
-}
+        .menuc2 img{
+            width: 130%;
+            height: 85%;
+            margin-top: 5px;
+        }
         h3{
             text-align: center;
             margin: auto;
             font-family: 'Shadows Into Light Two', cursive;
             color: black;
             font-size: 1.5rem;
+            padding-left: 145px;
+            padding-right: 50px;
         }
     }
 /*Corps des articles*/
@@ -147,15 +138,15 @@ h3{
     &:hover{
 
         &:after {
-          width:15%;
-          left:600px;
+          width:20%;
+          left:550px;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 600px;
+          left: 550px;
           position: absolute;
           background: #0082fb;
           transition: width 1s ease 0s, right 0.5s ease 0s;

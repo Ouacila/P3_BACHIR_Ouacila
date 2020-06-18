@@ -124,28 +124,15 @@ section .Titre {
   margin-bottom: 30px;
 }
 
-section .Titre .menuc1 {
-  transform: scale(1.4, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 1);
-  -moz-transform: scale(1.4, 1);
-  -ms-transform: scale(1.4, 1);
-  -o-transform: scale(1.4, 1);
-  margin-right: 170px;
-  margin-top: 5px;
+section .Titre .menuc1 img {
+  width: 130%;
+  height: 110%;
 }
 
-section .Titre .menuc2 {
-  transform: scale(1.4, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: scale(1.4, 1);
-  -moz-transform: scale(1.4, 1);
-  -ms-transform: scale(1.4, 1);
-  -o-transform: scale(1.4, 1);
-  margin-top: 10px;
-  margin-left: 20px;
+section .Titre .menuc2 img {
+  width: 130%;
+  height: 85%;
+  margin-top: 5px;
 }
 
 section .Titre h3 {
@@ -154,6 +141,8 @@ section .Titre h3 {
   font-family: 'Shadows Into Light Two', cursive;
   color: black;
   font-size: 1.5rem;
+  padding-left: 145px;
+  padding-right: 50px;
 }
 
 section .intitule {
@@ -207,8 +196,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 15%;
-  left: 600px;
+  width: 20%;
+  left: 550px;
 }
 
 h3:after {
@@ -216,7 +205,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 600px;
+  left: 550px;
   position: absolute;
   background: #0082fb;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
