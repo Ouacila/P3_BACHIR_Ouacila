@@ -2,6 +2,10 @@ a:link
 { 
 text-decoration:none; 
 } 
+body{
+    background-color: #fcdfdb;
+    margin: 0;
+}
 /*En tête*/
 header{
     width: 100%;
@@ -26,20 +30,28 @@ footer{
     bottom: 0;
     display: inline-flex;
     justify-content: space-between;
-    h3{
+    h4{
         display: block;
         color: #e5c54f;
         font-family: 'Rubik', sans-serif;
         font-size: 30px;
-        padding-top: 5px;
         padding-right: 20px;
         padding-left: 20px;
+        cursor: pointer;
+        &:hover{
+            animation: wiggle 150ms 4;
+            animation-timing-function: linear;
+            -webkit-animation: wiggle 150ms 4;
+}
+        }
+          
+          @keyframes wiggle {
+            0% { transform: translate(2px, 0); }
+            50% { transform: translate(-2px, 0); }
+            100% { transform: translate(2px, 0); }
+          }
     }
-}
-body{
-    background-color: #fcdfdb;
-    margin: 0;
-}
+
 /*Section principale avec titre du menu 1*/
 section{
     margin-bottom: 150px;
@@ -135,7 +147,7 @@ h2{
     
     }
 /* Bas de page menu1 avec la note de musique*/
-    h4{
+    h5{
         display: inline-flex;
         font-family: 'Devonshire', sans-serif;
         font-size: 3rem;
@@ -154,3 +166,38 @@ h2{
         background-image: -webkit-linear-gradient (right, #f39c7d, #f1585d, #f15c61);
 }
     }
+h3{
+    cursor: pointer;
+    &:hover{
+
+        &:after {
+          width:25%;
+          left: 550px;
+        }}
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 550px;
+          position: absolute;
+          background: #3d1319;
+          transition: width 1s ease 0s, right 0.5s ease 0s;
+          width: 0;
+        }
+      }
+/* Mise en page du responsive tablette*/
+@media all and (max-width:1024px){
+    section{
+        width: 80%;
+        margin: 0;
+        justify-content: center;
+    }
+    h3{
+        font-size: 10px;
+    }
+
+}
+@media all and (max-width:700px){
+    
+}

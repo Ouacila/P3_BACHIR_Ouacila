@@ -31,15 +31,26 @@ footer{
     bottom: 0;
     display: inline-flex;
     justify-content: space-between;
-    h3{
+    h4{
         display: block;
         color: #e5c54f;
         font-family: 'Rubik', sans-serif;
         font-size: 30px;
-        padding-top: 5px;
         padding-right: 20px;
         padding-left: 20px;
-    }
+        cursor: pointer;
+        &:hover{
+            animation: wiggle 150ms 4;
+            animation-timing-function: linear;
+            -webkit-animation: wiggle 150ms 4;
+}
+        }
+          
+          @keyframes wiggle {
+            0% { transform: translate(2px, 0); }
+            50% { transform: translate(-2px, 0); }
+            100% { transform: translate(2px, 0); }
+          }
 }
 /* Section princpale et titre du menu 4*/
 section{
@@ -150,3 +161,24 @@ section{
         float: right;
     }
 }
+h3{
+    cursor: pointer;
+    &:hover{
+
+        &:after {
+          width:20%;
+          left:550px;
+        }}
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 550px;
+          position: absolute;
+          background: #7cc463;
+          transition: width 1s ease 0s, right 0.5s ease 0s;
+          width: 0;
+        }
+      }
+

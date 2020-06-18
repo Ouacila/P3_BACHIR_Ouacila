@@ -40,14 +40,51 @@ footer {
           justify-content: space-between;
 }
 
-footer h3 {
+footer h4 {
   display: block;
   color: #e5c54f;
   font-family: 'Rubik', sans-serif;
   font-size: 30px;
-  padding-top: 5px;
   padding-right: 20px;
   padding-left: 20px;
+  cursor: pointer;
+}
+
+footer h4:hover {
+  animation: wiggle 150ms 4;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation: wiggle 150ms 4;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
 }
 
 /* Section princpale et titre du menu 2*/
@@ -90,7 +127,7 @@ section .Entrée .Titre {
   margin-bottom: 30px;
 }
 
-section .Entrée .Titre .menuba1 {
+section .Entrée .menuba1 {
   transform: scale(1.4, 0.8);
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -101,7 +138,7 @@ section .Entrée .Titre .menuba1 {
   margin-right: 130px;
 }
 
-section .Entrée .Titre .menuba2 {
+section .Entrée .menuba2 {
   transform: scale(1.4, 0.8);
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -111,7 +148,7 @@ section .Entrée .Titre .menuba2 {
   -o-transform: scale(1.4, 0.8);
 }
 
-section .Entrée .Titre h3 {
+section .Entrée h3 {
   text-align: center;
   margin: auto;
   font-family: 'Roboto Slab', serif;
@@ -262,5 +299,27 @@ section .Dessert .description {
   font-size: 1.5rem;
   color: #905cff;
   margin-left: 200px;
+}
+
+h3 {
+  cursor: pointer;
+}
+
+h3:hover:after {
+  width: 30%;
+  left: 500px;
+}
+
+h3:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 500px;
+  position: absolute;
+  background-image: -webkit-linear-gradient(left, #e2943f, #bc7b9c, #905cff);
+  -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+  transition: width 1s ease 0s, right 0.5s ease 0s;
+  width: 0;
 }
 /*# sourceMappingURL=menub.css.map */

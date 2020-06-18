@@ -31,16 +31,27 @@ footer{
     bottom: 0;
     display: inline-flex;
     justify-content: space-between;
-    h3{
+    h4{
         display: block;
         color: #e5c54f;
         font-family: 'Rubik', sans-serif;
         font-size: 30px;
-        padding-top: 5px;
         padding-right: 20px;
         padding-left: 20px;
-    }
+        cursor: pointer;
+        &:hover{
+            animation: wiggle 150ms 4;
+            animation-timing-function: linear;
+            -webkit-animation: wiggle 150ms 4;
 }
+        }
+          
+          @keyframes wiggle {
+            0% { transform: translate(2px, 0); }
+            50% { transform: translate(-2px, 0); }
+            100% { transform: translate(2px, 0); }
+          }
+    }
 /* Section princpale et titre du menu 2*/
 section{
     width: 90%;
@@ -67,7 +78,7 @@ section{
         margin-top: 50px;
         justify-content: space-around;
         margin-bottom: 30px;
-    
+}
         .menuba1{
         transform: scale(1.4,0.8);
         transform-origin: left;
@@ -92,7 +103,7 @@ section{
         color: #e2943f;
         font-size: 1.5rem;
     }
-}
+
 /*Corps des entrées*/
 .intitule{
     width: 70%;
@@ -212,3 +223,24 @@ section{
         }
     }
 }
+h3{
+    cursor: pointer;
+    &:hover{
+
+        &:after {
+          width:30%;
+          left:500px;
+        }}
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 500px;
+          position: absolute;
+          background-image: -webkit-linear-gradient(left,#e2943f, #bc7b9c, #905cff);
+          transition: width 1s ease 0s, right 0.5s ease 0s;
+          width: 0;
+        }
+      }
+
