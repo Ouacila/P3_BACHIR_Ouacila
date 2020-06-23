@@ -50,39 +50,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: wiggle 150ms 4;
+  animation: shake 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: wiggle 150ms 4;
+  -webkit-animation: shake 100ms infinite;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
-@keyframes wiggle {
+@keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
@@ -207,8 +225,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 20%;
-  left: 570px;
+  width: 25%;
+  left: 40%;
 }
 
 h3:after {
@@ -216,7 +234,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 570px;
+  left: 40%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -227,14 +245,80 @@ h3:after {
 /* Mise en page du responsive tablette*/
 @media all and (max-width: 1024px) {
   section {
-    width: 80%;
+    width: 100%;
     margin: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  h3 {
+  .Titre h3 {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  .Titre .menua2 img {
+    height: 20%;
+  }
+  .description {
+    width: 80%;
+  }
+  .prix p {
+    margin-top: 60px;
+  }
+  .Pied {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding-bottom: 200px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  header h1 {
+    font-size: 30px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  section .fa-music {
+    font-size: 50px;
+  }
+  section h2 {
+    font-size: 50px;
+  }
+  .Titre {
+    width: 100%;
+  }
+  .Titre .menua1, .Titre .menua2 {
+    display: none;
+  }
+  .Titre h3 {
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .description p {
     font-size: 10px;
+  }
+  .prix {
+    right: 10%;
+  }
+  .prix p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .Pied {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  .Pied .fa-music {
+    font-size: 20px;
+  }
+  .Pied h5 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=menua.css.map */

@@ -51,39 +51,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: wiggle 150ms 4;
+  animation: shake 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: wiggle 150ms 4;
+  -webkit-animation: shake 100ms infinite;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
-@keyframes wiggle {
+@keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
@@ -165,7 +183,7 @@ section .intitule .prix {
   font-size: 1.7rem;
   color: black;
   position: absolute;
-  right: 300px;
+  right: 20%;
 }
 
 section .intitulec {
@@ -188,7 +206,7 @@ section .intitulec .prix {
   font-size: 1.7rem;
   color: black;
   position: absolute;
-  right: 300px;
+  right: 20%;
 }
 
 h3 {
@@ -197,7 +215,7 @@ h3 {
 
 h3:hover:after {
   width: 20%;
-  left: 550px;
+  left: 38%;
 }
 
 h3:after {
@@ -205,11 +223,98 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 550px;
+  left: 38%;
   position: absolute;
   background: #0082fb;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
   transition: width 1s ease 0s, right 0.5s ease 0s;
   width: 0;
+}
+
+/* Site responsive tablettes*/
+@media all and (max-width: 1024px) {
+  .menuc1, .menuc2 {
+    height: 70%;
+  }
+  section {
+    margin-left: 5%;
+  }
+  section .intitulec {
+    width: 45%;
+  }
+  section h3 {
+    cursor: pointer;
+  }
+  section h3:hover:after {
+    width: 30%;
+    left: 38%;
+  }
+  section h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 38%;
+    position: absolute;
+    background: #0082fb;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
+  section .prix p {
+    margin-top: 40px;
+  }
+}
+
+/*Site responsive smartphone*/
+@media all and (max-width: 700px) {
+  .menuc1, .menuc2 {
+    display: none;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  section h2 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 40px;
+  }
+  section .Entrée, section .Plat, section .Dessert {
+    width: 100%;
+    margin-right: 0px;
+  }
+  section .Entrée .Titre, section .Plat .Titre, section .Dessert .Titre {
+    width: 100%;
+  }
+  section .Entrée .Titre h3, section .Plat .Titre h3, section .Dessert .Titre h3 {
+    font-size: 20px;
+    margin-left: -20%;
+  }
+  section .Plat {
+    width: 100%;
+  }
+  section .Plat .description {
+    margin-left: -5%;
+  }
+  section .description p {
+    width: 80%;
+    margin-left: 5%;
+    font-size: 10px;
+  }
+  section .prix p {
+    margin-top: 10%;
+    font-size: 15px;
+  }
+  section .Dessert {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=menuc.css.map */

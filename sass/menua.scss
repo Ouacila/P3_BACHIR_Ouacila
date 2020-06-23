@@ -39,18 +39,18 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: wiggle 150ms 4;
+            animation: shake 100ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: wiggle 150ms 4;
-}
-        }
+            -webkit-animation: shake 100ms infinite;
+  }
           
-          @keyframes wiggle {
-            0% { transform: translate(2px, 0); }
-            50% { transform: translate(-2px, 0); }
-            100% { transform: translate(2px, 0); }
+          @keyframes shake {
+            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
+            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
           }
-    }
+      }
+}
 
 /*Section principale avec titre du menu 1*/
 section{
@@ -158,15 +158,15 @@ h3{
     &:hover{
 
         &:after {
-          width:20%;
-          left: 570px;
+          width:25%;
+          left: 40%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 570px;
+          left: 40%;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -176,15 +176,90 @@ h3{
 /* Mise en page du responsive tablette*/
 @media all and (max-width:1024px){
     section{
-        width: 80%;
+        width: 100%;
         margin: 0;
         justify-content: center;
     }
-    h3{
-        font-size: 10px;
+    
+    .Titre{
+        h3{
+        font-size: 30px;
+        margin-right: 50px;
+        }
+    .menua2 img{
+        height: 20%;
+    }
+}
+    .description{
+        width: 80%;
+    }
+    .prix{
+        p{
+            margin-top: 60px;
+        }
+    }
+    .Pied{
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 200px;
     }
 
 }
 @media all and (max-width:700px){
+    header{
+        h1{
+            font-size: 30px;
+
+    }
+}
+footer{
+    h4{
+        font-size: 20px;
+    }
+}
+section{
+    .fa-music{
+        font-size: 50px;
+    }
+h2{
+    font-size: 50px;
+}
+}
+    .Titre{
+        width: 100%;
+        .menua1, .menua2{
+        display: none;
+    }
+    h3{
+        width: 100%;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    }
+    .description{
+        p{
+            font-size: 10px;
+        }
+    }
+    .prix{
+        right: 10%;
+        p{
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    }
+    .Pied{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        .fa-music{
+            font-size: 20px;
+        }
+        h5{
+        font-size: 20px;
+    }
+}
     
 }

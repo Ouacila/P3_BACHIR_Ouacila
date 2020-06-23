@@ -40,18 +40,18 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: wiggle 150ms 4;
+            animation: shake 100ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: wiggle 150ms 4;
-}
-        }
+            -webkit-animation: shake 100ms infinite;
+  }
           
-          @keyframes wiggle {
-            0% { transform: translate(2px, 0); }
-            50% { transform: translate(-2px, 0); }
-            100% { transform: translate(2px, 0); }
+          @keyframes shake {
+            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
+            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
           }
-    }
+      }
+  }
 /* Section princpale et titre du menu 2*/
 section{
     width: 90%;
@@ -112,7 +112,7 @@ section{
             font-size: 1.5rem;
             color: #e2943f;
             position: absolute;
-            right: 250px;
+            right: 25%;
         }
     }
     }
@@ -158,7 +158,7 @@ section{
             font-size: 1.5rem;
             color: #bc7b9c;
             position: absolute;
-            right: 250px;
+            right: 25%;
         }
     }
     }
@@ -203,18 +203,130 @@ h3{
 
         &:after {
           width:30%;
-          left:500px;
+          left:35%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 500px;
+          left: 35%;
           position: absolute;
           background-image: -webkit-linear-gradient(left,#e2943f, #bc7b9c, #905cff);
           transition: width 1s ease 0s, right 0.5s ease 0s;
           width: 0;
         }
       }
+    
+/*Sites sur tablette*/
+@media all and (max-width:1024px){
+    section{
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+    .Entrée{
+        .intitule{
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-around;
+            margin:auto;
+            .description{
+                width: 90%;
+            }
+        }
+    }
+    .Plat{
+        .description{
+        margin-left: 5%;
+    }
+}
+      .prix{
+            margin-right: -15%;
+        }
+        .Dessert{
+            .description{
+                margin-left: 5%;
+            }
+        }
+        footer{
+            h4{
+                font-size: 20px;
+            }
+        }
+}
+}
+/* Site responsive smartphone*/
+@media all and (max-width:700px)
+{
+    .menuba1, .menuba2, .menubb1, .menubb2, .menubc1, .menubc2{
+        display: none;
+    }
+    header{
+        h1{
+            font-size: 30px;
+
+    }
+}
+    footer{
+        h4{
+        font-size: 20px;
+    }
+}
+    section{
+        width: 100%;
+        h2{
+            font-size: 40px;
+        }
+    .Entrée{
+        .Titre{
+            width: 100%;
+
+        h3{
+            margin-left: -20%;
+            font-size: 20px;
+        }
+    }
+}
+    .Plat{
+    .Titre{
+        width: 100%;
+    h3{
+        margin-left: -10%;
+        font-size: 20px;
+    }
+}
+.intitule{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+    }
+    .Dessert{
+        .Titre{
+            width: 100%;
+            h3{
+                margin-left: -10%;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+.description{
+    p{
+        width: 80%;
+        font-size: 10px;
+}
+}
+.prix{
+    p{
+        width: 10%;
+        font-size: 15px;
+        margin-right: -150px;
+    }
+}
+
+}
+}
+
 

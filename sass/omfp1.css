@@ -43,15 +43,11 @@ aside p {
   cursor: pointer;
 }
 
-aside p:hover:after {
+aside p:after {
   display: inline-block;
   animation: dot steps(1, end) 2500ms infinite;
   content: '';
   -webkit-animation: dot steps(1, end) 2500ms infinite;
-}
-
-aside p:after {
-  display: none;
 }
 
 @-webkit-keyframes dot {
@@ -117,39 +113,57 @@ footer h3 {
 }
 
 footer h3:hover {
-  animation: wiggle 150ms 4;
+  animation: shake 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: wiggle 150ms 4;
+  -webkit-animation: shake 100ms infinite;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
-@keyframes wiggle {
+@keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
@@ -171,7 +185,7 @@ footer h3:hover {
 
 .Article1 .Menua {
   display: block;
-  width: 400px;
+  width: 30%;
   height: 550px;
   background-color: #fcdfdb;
   text-align: center;
@@ -201,7 +215,7 @@ footer h3:hover {
 
 .Article1 .Menub {
   display: block;
-  width: 400px;
+  width: 30%;
   height: 550px;
   background-color: #fff5fe;
   text-align: center;
@@ -242,7 +256,7 @@ footer h3:hover {
 
 .Article2 .Menuc {
   display: block;
-  width: 400px;
+  width: 30%;
   height: 550px;
   background-color: #f9F9F9;
   text-align: center;
@@ -267,7 +281,7 @@ footer h3:hover {
 
 .Article2 .Menud {
   display: block;
-  width: 400px;
+  width: 30%;
   height: 550px;
   background-color: #fdfffd;
   text-align: center;
@@ -290,125 +304,101 @@ footer h3:hover {
   color: #7cc463;
 }
 
-.Menua, .Menub, .Menuc, .Menud {
+.grown {
   cursor: pointer;
 }
 
-.Menua:hover, .Menub:hover, .Menuc:hover, .Menud:hover {
+.grown:hover {
   animation: grown2 2000ms;
   -webkit-animation: grown2 2000ms;
 }
 
 @-webkit-keyframes grown2 {
   0% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
     opacity: 0;
   }
 }
 
 @keyframes grown2 {
   0% {
-    transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
     opacity: 0;
   }
 }
 
 /* Travail du site responsive*/
 @media all and (max-width: 1024px) {
-  .Article1, .Article2 {
-    margin: 0;
+  header h1 {
+    font-size: 30px;
+  }
+  main {
     width: 100%;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  }
+  main .Article1, main .Article2 {
+    width: 100%;
+    margin-left: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   aside {
-    width: 60%;
+    width: 70%;
+    height: 90px;
   }
 }
 
-/*Affichage sur smartphone*/
-@media all and (max-width: 700px) {
-  header {
-    width: 100%;
-    height: 150px;
-  }
-  header h1 {
-    font-size: 30px;
-    padding-top: 50px;
-  }
-  footer {
-    width: 100%;
-    height: 150px;
-    background-color: #579C87;
-    position: fixed;
-    bottom: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
+@media all and (max-width: 750px) {
   footer h3 {
-    color: #e5c54f;
-    font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  aside {
-    width: 60%;
-    height: 70px;
-    background-color: #579C87;
-    border-radius: 10px;
-    margin-bottom: 180px;
-  }
-  aside p {
-    color: #e5c54f;
-    font-family: 'Rubik', sans-serif;
-    font-size: 30px;
-  }
-  .Article1, .Article2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 89%;
     text-align: center;
     margin: auto;
   }
-  .fa-music, h2, h3 {
-    margin-left: 30px;
+  aside {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 200px;
+  }
+  aside p {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .Article1, .Article2 {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .Article1 .Menua, .Article1 .Menub, .Article1 .Menuc, .Article1 .Menud, .Article2 .Menua, .Article2 .Menub, .Article2 .Menuc, .Article2 .Menud {
+    width: 100%;
+  }
+  .Article1 .Menub h2, .Article1 .Menuc h2, .Article1 .Menud h2, .Article2 .Menub h2, .Article2 .Menuc h2, .Article2 .Menud h2 {
+    padding-top: 200px;
   }
 }
 /*# sourceMappingURL=omfp1.css.map */

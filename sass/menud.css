@@ -51,39 +51,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: wiggle 150ms 4;
+  animation: shake 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: wiggle 150ms 4;
+  -webkit-animation: shake 100ms infinite;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
-@keyframes wiggle {
+@keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
@@ -106,10 +124,11 @@ section h2 {
 
 section .Entrée, section .Plat, section .Dessert {
   width: 100%;
-  margin-left: 100px;
+  margin-left: 5%;
 }
 
 section .Titre {
+  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -120,16 +139,9 @@ section .Titre {
   margin-bottom: 30px;
 }
 
-section .Titre .menuda1 img, section .Titre .menuda2 img {
-  width: 120%;
-  height: 100%;
-  margin-left: 15px;
-}
-
 section .Titre .menud1 img, section .Titre .menud2 img {
-  width: 105%;
+  width: 110%;
   height: 100%;
-  margin-left: 10px;
 }
 
 section .Titre h3 {
@@ -148,7 +160,7 @@ section .intitulea {
   display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 90%;
+  width: 80%;
 }
 
 section .intitulea .description {
@@ -161,8 +173,8 @@ section .intitulea .prix {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 1.5rem;
   color: black;
-  float: right;
-  margin-left: 130px;
+  position: absolute;
+  right: 20%;
 }
 
 .intitule {
@@ -184,7 +196,8 @@ section .intitulea .prix {
   font-family: 'Balsamiq Sans', cursive;
   font-size: 1.5rem;
   color: black;
-  float: right;
+  position: absolute;
+  right: 20%;
 }
 
 h3 {
@@ -192,8 +205,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 17%;
-  left: 610px;
+  width: 20%;
+  left: 40%;
 }
 
 h3:after {
@@ -201,11 +214,81 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 610px;
+  left: 40%;
   position: absolute;
   background: #7cc463;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
   transition: width 1s ease 0s, right 0.5s ease 0s;
   width: 0;
+}
+
+/*Site responsive: tablettes*/
+@media all and (max-width: 1024px) {
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  section h2 {
+    text-align: center;
+    margin: auto;
+  }
+  section .Titre {
+    width: 90%;
+  }
+  section .Titre .menud1, section .Titre .menud2 {
+    width: 50%;
+    height: 30%;
+  }
+  section .Entrée, section .Plat, section .Dessert {
+    width: 90%;
+  }
+  section .description {
+    width: 70%;
+    margin-left: -5%;
+  }
+  section .prix p {
+    line-height: 50px;
+  }
+}
+
+/* Site responsive smartphone*/
+@media all and (max-width: 700px) {
+  .menud1, .menud2 {
+    display: none;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+  }
+  section h2 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 40px;
+  }
+  section .Entrée, section .Plat, section .Dessert {
+    width: 100%;
+    margin: 0;
+  }
+  section .Entrée .Titre, section .Plat .Titre, section .Dessert .Titre {
+    width: 100%;
+  }
+  section .Entrée .Titre h3, section .Plat .Titre h3, section .Dessert .Titre h3 {
+    font-size: 20px;
+  }
+  section .Entrée .description p, section .Plat .description p, section .Dessert .description p {
+    width: 80%;
+    margin-left: 5%;
+    font-size: 10px;
+  }
+  section .Entrée .prix p, section .Plat .prix p, section .Dessert .prix p {
+    margin-top: -15px;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=menud.css.map */

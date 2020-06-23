@@ -51,39 +51,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: wiggle 150ms 4;
+  animation: shake 100ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: wiggle 150ms 4;
+  -webkit-animation: shake 100ms infinite;
 }
 
-@-webkit-keyframes wiggle {
+@-webkit-keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
-@keyframes wiggle {
+@keyframes shake {
   0% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
   50% {
-    -webkit-transform: translate(-2px, 0);
-            transform: translate(-2px, 0);
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
   }
   100% {
-    -webkit-transform: translate(2px, 0);
-            transform: translate(2px, 0);
+    transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
   }
 }
 
@@ -166,7 +184,7 @@ section .Entrée .intitule .prix {
   font-size: 1.5rem;
   color: #e2943f;
   position: absolute;
-  right: 250px;
+  right: 25%;
 }
 
 section .Plat {
@@ -224,7 +242,7 @@ section .Plat .intitule .prix {
   font-size: 1.5rem;
   color: #bc7b9c;
   position: absolute;
-  right: 250px;
+  right: 25%;
 }
 
 section .Dessert {
@@ -275,7 +293,7 @@ h3 {
 
 h3:hover:after {
   width: 30%;
-  left: 500px;
+  left: 35%;
 }
 
 h3:after {
@@ -283,11 +301,102 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 500px;
+  left: 35%;
   position: absolute;
   background-image: -webkit-linear-gradient(left, #e2943f, #bc7b9c, #905cff);
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
   transition: width 1s ease 0s, right 0.5s ease 0s;
   width: 0;
+}
+
+/*Sites sur tablette*/
+@media all and (max-width: 1024px) {
+  section {
+    width: 90%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  section .Entrée .intitule {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
+  }
+  section .Entrée .intitule .description {
+    width: 90%;
+  }
+  section .Plat .description {
+    margin-left: 5%;
+  }
+  section .prix {
+    margin-right: -15%;
+  }
+  section .Dessert .description {
+    margin-left: 5%;
+  }
+  section footer h4 {
+    font-size: 20px;
+  }
+}
+
+/* Site responsive smartphone*/
+@media all and (max-width: 700px) {
+  .menuba1, .menuba2, .menubb1, .menubb2, .menubc1, .menubc2 {
+    display: none;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  section {
+    width: 100%;
+  }
+  section h2 {
+    font-size: 40px;
+  }
+  section .Entrée .Titre {
+    width: 100%;
+  }
+  section .Entrée .Titre h3 {
+    margin-left: -20%;
+    font-size: 20px;
+  }
+  section .Plat .Titre {
+    width: 100%;
+  }
+  section .Plat .Titre h3 {
+    margin-left: -10%;
+    font-size: 20px;
+  }
+  section .Plat .intitule {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .Dessert .Titre {
+    width: 100%;
+  }
+  section .Dessert .Titre h3 {
+    margin-left: -10%;
+    font-size: 20px;
+  }
+  section .description p {
+    width: 80%;
+    font-size: 10px;
+  }
+  section .prix p {
+    width: 10%;
+    font-size: 15px;
+    margin-right: -150px;
+  }
 }
 /*# sourceMappingURL=menub.css.map */

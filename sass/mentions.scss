@@ -42,18 +42,19 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: wiggle 150ms 4;
+            animation: shake 100ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: wiggle 150ms 4;
-}
-        }
+            -webkit-animation: shake 100ms infinite;
+  }
           
-          @keyframes wiggle {
-            0% { transform: translate(2px, 0); }
-            50% { transform: translate(-2px, 0); }
-            100% { transform: translate(2px, 0); }
+          @keyframes shake {
+            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
+            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
           }
-    }
+      }
+}
+/* Corps de la page*/
 section{
     width: 100%;
     margin-bottom: 150px;
@@ -70,5 +71,30 @@ section{
         color: black;
         justify-content: center;
         margin-top: 50px;
+    }
+}
+/* Affichage smartphone*/
+@media all and (max-width:700px)
+{
+    header{
+        h1{
+            font-size: 30px;
+
+    }
+}
+footer{
+    h3{
+        font-size: 20px;
+    }
+}
+    section{
+        width: 90%;
+        margin-left: 4%;
+        h2{
+            font-size: 40px;
+        }
+        p{
+            text-align: justify;
+        }
     }
 }

@@ -40,17 +40,17 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: wiggle 150ms 4;
+            animation: shake 100ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: wiggle 150ms 4;
-}
-        }
+            -webkit-animation: shake 100ms infinite;
+  }
           
-          @keyframes wiggle {
-            0% { transform: translate(2px, 0); }
-            50% { transform: translate(-2px, 0); }
-            100% { transform: translate(2px, 0); }
+          @keyframes shake {
+            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
+            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
           }
+      }
     }
 /* Section principale avec les différents articles+ titre du menu*/
 section{
@@ -111,7 +111,7 @@ section{
         font-size: 1.7rem;
         color: black;
         position: absolute;
-        right: 300px;
+        right: 20%;
     }
 }
 /* Corps dessert*/
@@ -129,7 +129,7 @@ section{
         font-size: 1.7rem;
         color: black;
         position: absolute;
-        right: 300px;
+        right: 20%;
 }
 }
 }
@@ -139,17 +139,120 @@ h3{
 
         &:after {
           width:20%;
-          left:550px;
+          left:38%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 550px;
+          left: 38%;
           position: absolute;
           background: #0082fb;
           transition: width 1s ease 0s, right 0.5s ease 0s;
           width: 0;
         }
       }
+/* Site responsive tablettes*/
+@media all and (max-width:1024px)
+{
+    .menuc1, .menuc2{
+        height: 70%;
+    }
+    section{
+        margin-left: 5%;
+        .intitulec{
+            width: 45%;
+        }
+
+        h3{
+            cursor: pointer;
+            &:hover{
+        
+                &:after {
+                  width:30%;
+                  left:38%;
+                }}
+                &:after {
+                  background: none repeat scroll 0 0 transparent;
+                  content: "";
+                  display: block;
+                  height: 4px;
+                  left: 38%;
+                  position: absolute;
+                  background: #0082fb;
+                  transition: width 1s ease 0s, right 0.5s ease 0s;
+                  width: 0;
+                }
+              }
+        .prix{
+            p{
+                margin-top: 40px;
+            }
+        }
+
+    }
+}
+/*Site responsive smartphone*/
+@media all and(max-width:700px){
+    .menuc1, .menuc2{
+        display: none;
+    }
+    header{
+        h1{
+            font-size: 30px;
+
+    }
+}
+    footer{
+        h4{
+        font-size: 20px;
+    }
+}
+    section{
+        width: 100%;
+        margin-left: 0;
+        h2{
+            text-align: center;
+            margin-left: 0px;
+            font-size: 40px;
+        }
+        .Entrée, .Plat, .Dessert{
+            width: 100%;
+            margin-right: 0px;
+            
+        .Titre{
+            width: 100%;
+        h3{
+            font-size: 20px;
+            margin-left: -20%;
+            
+        }
+    }
+        }
+    
+        .Plat{
+            width: 100%;
+            .description{
+                margin-left: -5%;
+            }
+        }
+        .description{
+            p{
+                width: 80%;
+                margin-left: 5%;
+                font-size: 10px;
+            }
+        }
+        .prix{
+            p{
+                margin-top: 10%;
+                font-size: 15px;
+            }
+        }
+        .Dessert{
+            width: 100%;
+            margin-right: 0;
+        }
+}
+    }
