@@ -40,15 +40,15 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: shake 100ms infinite;
+            animation: shake 150ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: shake 100ms infinite;
-  }
+            -webkit-animation: shake 150ms infinite;
+}
           
           @keyframes shake {
-            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
-            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
-            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            0% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
+            50% { transform: rotate(-2deg); -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
           }
       }
 }
@@ -185,6 +185,26 @@ h3{
 
     }
 }
+h3{
+    cursor: pointer;
+    &:hover{
+
+        &:after {
+          width:15%;
+          left:40%;
+        }}
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 40%;
+          position: absolute;
+          background: #7cc463;
+          transition: width 1s ease 0s, right 0.5s ease 0s;
+          width: 0;
+        }
+      }
 }
 /* Site responsive smartphone*/
 @media all and (max-width:700px)
@@ -236,6 +256,70 @@ section{
 }
     }
 }
+h3{
+    cursor: pointer;
+    &:hover{
+
+        &:after {
+          width:30%;
+          left:40%;
+        }}
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          content: "";
+          display: block;
+          height: 4px;
+          left: 40%;
+          position: absolute;
+          background: #7cc463;
+          transition: width 1s ease 0s, right 0.5s ease 0s;
+          width: 0;
+        }
+      }
+}
+/*Sites pour grands écrans 4K*/
+@media all and (min-width:1500px) and (max-width:2300px)
+{
+    header{
+        height: 250px;
+    }
+    footer{
+        height: 200px;
+    }
+    section{
+    h2{
+        margin-left: 600px;
+        font-size: 7rem;
+    }
+    .Entrée, .Plat, .Dessert{
+        .Titre{
+            .menud1 img, .menud2 img{
+                height: 60%;
+    }
+            h3{
+                font-size: 40px;
+            }
+        }
+    }
+    .Plat, .Dessert{
+        .Titre{
+                .menud1 img, .menud2 img{
+                    height: 30%;
+        }
+    }
+}
+}
+        .description{
+            p{
+                font-size: 40px;
+            }
+        }
+        .prix{
+            p{
+                font-size: 45px;
+                margin-right: -80px;
+            }
+        }
 }
 
 

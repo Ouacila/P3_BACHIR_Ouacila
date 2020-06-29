@@ -51,57 +51,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: shake 100ms infinite;
+  animation: shake 150ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: shake 100ms infinite;
+  -webkit-animation: shake 150ms infinite;
 }
 
 @-webkit-keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
 @keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
@@ -249,6 +249,25 @@ h3:after {
   section .prix p {
     line-height: 50px;
   }
+  h3 {
+    cursor: pointer;
+  }
+  h3:hover:after {
+    width: 15%;
+    left: 40%;
+  }
+  h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 40%;
+    position: absolute;
+    background: #7cc463;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
 }
 
 /* Site responsive smartphone*/
@@ -289,6 +308,55 @@ h3:after {
   section .Entrée .prix p, section .Plat .prix p, section .Dessert .prix p {
     margin-top: -15px;
     font-size: 10px;
+  }
+  h3 {
+    cursor: pointer;
+  }
+  h3:hover:after {
+    width: 30%;
+    left: 40%;
+  }
+  h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 40%;
+    position: absolute;
+    background: #7cc463;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
+}
+
+/*Sites pour grands écrans 4K*/
+@media all and (min-width: 1500px) and (max-width: 2300px) {
+  header {
+    height: 250px;
+  }
+  footer {
+    height: 200px;
+  }
+  section h2 {
+    margin-left: 600px;
+    font-size: 7rem;
+  }
+  section .Entrée .Titre .menud1 img, section .Entrée .Titre .menud2 img, section .Plat .Titre .menud1 img, section .Plat .Titre .menud2 img, section .Dessert .Titre .menud1 img, section .Dessert .Titre .menud2 img {
+    height: 60%;
+  }
+  section .Entrée .Titre h3, section .Plat .Titre h3, section .Dessert .Titre h3 {
+    font-size: 40px;
+  }
+  section .Plat .Titre .menud1 img, section .Plat .Titre .menud2 img, section .Dessert .Titre .menud1 img, section .Dessert .Titre .menud2 img {
+    height: 30%;
+  }
+  .description p {
+    font-size: 40px;
+  }
+  .prix p {
+    font-size: 45px;
+    margin-right: -80px;
   }
 }
 /*# sourceMappingURL=menud.css.map */

@@ -40,15 +40,15 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: shake 100ms infinite;
+            animation: shake 150ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: shake 100ms infinite;
-  }
+            -webkit-animation: shake 150ms infinite;
+}
           
           @keyframes shake {
-            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
-            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
-            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            0% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
+            50% { transform: rotate(-2deg); -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
           }
       }
     }
@@ -256,3 +256,52 @@ h3{
         }
 }
     }
+/*Sites pour grands écrans 4K*/
+@media all and (min-width:1500px) and (max-width:2300px)
+{
+    header{
+        height: 250px;
+    }
+    footer{
+        height: 200px;
+    }
+    section{
+    h2{
+        font-size: 7rem;
+        margin-bottom: 100px;
+    }
+    }
+    .Entrée, .Plat, .Dessert{
+        .Titre{
+            width: 100%;
+            justify-content: center;
+            margin: auto;
+            h3{
+                font-size: 50px;
+            }
+        }
+    }
+    .description{
+        p{
+            font-size: 45px;
+        }
+    }
+    .prix{
+        p{
+            font-size: 50px;
+        }
+    }
+    .Plat{
+        .intitule{
+            .description{
+                margin-left: -70px;
+            }
+        }
+    }
+    .Dessert{
+        .intitulec{
+            .description{
+        margin-left: -150px;
+    }
+}}
+}

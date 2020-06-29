@@ -50,57 +50,57 @@ footer h4 {
 }
 
 footer h4:hover {
-  animation: shake 100ms infinite;
+  animation: shake 150ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: shake 100ms infinite;
+  -webkit-animation: shake 150ms infinite;
 }
 
 @-webkit-keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
 @keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
@@ -225,8 +225,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 25%;
-  left: 40%;
+  width: 10%;
+  left: 30%;
 }
 
 h3:after {
@@ -234,7 +234,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 40%;
+  left: 30%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -253,7 +253,7 @@ h3:after {
   }
   .Titre h3 {
     font-size: 30px;
-    margin-right: 50px;
+    margin-right: 60px;
   }
   .Titre .menua2 img {
     height: 20%;
@@ -274,6 +274,29 @@ h3:after {
   }
 }
 
+h3 {
+  cursor: pointer;
+}
+
+h3:hover:after {
+  width: 20%;
+  left: 43%;
+}
+
+h3:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 43%;
+  position: absolute;
+  background: #3d1319;
+  -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+  transition: width 1s ease 0s, right 0.5s ease 0s;
+  width: 0;
+}
+
+/* Responsive smartphone*/
 @media all and (max-width: 700px) {
   header h1 {
     font-size: 30px;
@@ -319,6 +342,56 @@ h3:after {
   }
   .Pied h5 {
     font-size: 20px;
+  }
+  h3 {
+    cursor: pointer;
+  }
+  h3:hover:after {
+    width: 23%;
+    left: 40%;
+  }
+  h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 40%;
+    position: absolute;
+    background: #3d1319;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+  }
+}
+
+/*Site grands écrans 4K*/
+@media all and (min-width: 1500px) and (max-width: 2300px) {
+  section {
+    margin-left: 150px;
+  }
+  section h2 {
+    font-size: 5rem;
+  }
+  header {
+    height: 250px;
+  }
+  footer {
+    height: 200px;
+  }
+  .prix {
+    padding-right: 120px;
+  }
+  .intitule .description {
+    font-size: 40px;
+  }
+  .intitule .prix {
+    font-size: 45px;
+  }
+  .description {
+    font-size: 40px;
+  }
+  .Titre h3 {
+    font-size: 40px;
   }
 }
 /*# sourceMappingURL=menua.css.map */

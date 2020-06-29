@@ -32,7 +32,7 @@ aside {
   text-align: center;
   margin: auto;
   border-radius: 10px;
-  margin-bottom: 150px;
+  margin-bottom: 10%;
 }
 
 aside p {
@@ -113,57 +113,57 @@ footer h3 {
 }
 
 footer h3:hover {
-  animation: shake 100ms infinite;
+  animation: shake 150ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation: shake 100ms infinite;
+  -webkit-animation: shake 150ms infinite;
 }
 
 @-webkit-keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
 @keyframes shake {
   0% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
   50% {
-    transform: rotate(-1deg);
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
   }
   100% {
-    transform: rotate(1deg);
-    -webkit-transform: rotate(1deg);
-    -moz-transform: rotate(1deg);
-    -ms-transform: rotate(1deg);
-    -o-transform: rotate(1deg);
+    transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
   }
 }
 
@@ -185,8 +185,8 @@ footer h3:hover {
 
 .Article1 .Menua {
   display: block;
-  width: 30%;
-  height: 550px;
+  width: 35%;
+  height: 600px;
   background-color: #fcdfdb;
   text-align: center;
   -webkit-box-shadow: 2px 2px 2px grey;
@@ -215,8 +215,8 @@ footer h3:hover {
 
 .Article1 .Menub {
   display: block;
-  width: 30%;
-  height: 550px;
+  width: 35%;
+  height: 600px;
   background-color: #fff5fe;
   text-align: center;
   -webkit-box-shadow: 2px 2px 2px grey;
@@ -256,8 +256,8 @@ footer h3:hover {
 
 .Article2 .Menuc {
   display: block;
-  width: 30%;
-  height: 550px;
+  width: 35%;
+  height: 600px;
   background-color: #f9F9F9;
   text-align: center;
   -webkit-box-shadow: 2px 2px 2px grey;
@@ -281,8 +281,8 @@ footer h3:hover {
 
 .Article2 .Menud {
   display: block;
-  width: 30%;
-  height: 550px;
+  width: 35%;
+  height: 600px;
   background-color: #fdfffd;
   text-align: center;
   -webkit-box-shadow: 2px 2px 2px grey;
@@ -352,6 +352,26 @@ footer h3:hover {
 }
 
 /* Travail du site responsive*/
+@media all and (min-width: 1440px) and (max-width: 2300px) {
+  .Article1 .Menua, .Article1 .Menub {
+    width: 40%;
+    height: 800px;
+  }
+  .Article2 .Menuc, .Article2 .Menud {
+    width: 40%;
+    height: 800px;
+  }
+  .grown {
+    margin-top: 130px;
+  }
+  .Menub .grown, .Menuc .grown, .Menud .grown {
+    margin-top: 300px;
+  }
+  aside {
+    margin-top: 150px;
+  }
+}
+
 @media all and (max-width: 1024px) {
   header h1 {
     font-size: 30px;

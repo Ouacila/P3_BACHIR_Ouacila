@@ -30,7 +30,7 @@ aside{
     text-align: center;
     margin: auto;
     border-radius: 10px;
-    margin-bottom: 150px;
+    margin-bottom: 10%;
     p{
         color: #e5c54f;
         font-family: 'Rubik', sans-serif;
@@ -73,15 +73,15 @@ footer{
         padding-left: 20px;
         cursor: pointer;
         &:hover{
-            animation: shake 100ms infinite;
+            animation: shake 150ms infinite;
             animation-timing-function: linear;
-            -webkit-animation: shake 100ms infinite;
-  }
+            -webkit-animation: shake 150ms infinite;
+}
           
           @keyframes shake {
-            0% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
-            50% { transform: rotate(-1deg); -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); -ms-transform: rotate(-1deg); -o-transform: rotate(-1deg); }
-            100% { transform: rotate(1deg); -webkit-transform: rotate(1deg); -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); }
+            0% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
+            50% { transform: rotate(-2deg); -webkit-transform: rotate(-2deg); -moz-transform: rotate(-2deg); -ms-transform: rotate(-2deg); -o-transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); }
           }
       }
   }
@@ -96,8 +96,8 @@ footer{
     margin-left: 150px;
     .Menua{
         display: block;
-        width: 30%;
-        height: 550px;
+        width: 35%;
+        height: 600px;
         background-color: #fcdfdb;
         text-align: center;
         box-shadow: 2px 2px 2px grey;
@@ -121,8 +121,8 @@ footer{
     }
     .Menub{
         display: block;
-        width: 30%;
-        height: 550px;
+        width: 35%;
+        height: 600px;
         background-color: #fff5fe;
         text-align: center;
         box-shadow: 2px 2px 2px grey;
@@ -153,8 +153,8 @@ footer{
     margin-left: 150px;
     .Menuc{
         display: block;
-        width: 30%;
-        height: 550px;
+        width: 35%;
+        height: 600px;
         background-color: #f9F9F9;
         text-align: center;
         box-shadow: 2px 2px 2px grey;
@@ -174,8 +174,8 @@ footer{
     }
     .Menud{
         display: block;
-        width: 30%;
-        height: 550px;
+        width: 35%;
+        height: 600px;
         background-color: #fdfffd;
         text-align: center;
         box-shadow: 2px 2px 2px grey;
@@ -219,9 +219,32 @@ footer{
 }
             }
         }
-
-
 /* Travail du site responsive*/
+@media all and (min-width:1440px) and (max-width:2300px){
+    .Article1{
+        .Menua, .Menub {
+            width: 40%;
+            height: 800px;
+        }
+    }
+    .Article2{
+        .Menuc, .Menud{
+            width: 40%;
+            height: 800px;
+        }
+    }
+    .grown {
+            margin-top: 130px;
+        }
+        .Menub, .Menuc, .Menud{
+            .grown{
+                margin-top: 300px;
+            }
+        }
+    aside{
+        margin-top: 150px;
+    }
+}
 @media all and (max-width:1024px){
     header{
         h1{
@@ -276,3 +299,4 @@ footer{
 }
 }
 }
+
