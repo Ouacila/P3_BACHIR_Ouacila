@@ -46,8 +46,13 @@ aside p {
 aside p:after {
   display: inline-block;
   animation: dot steps(1, end) 2500ms infinite;
-  content: '';
   -webkit-animation: dot steps(1, end) 2500ms infinite;
+  content: '';
+  -webkit-animation-name: dot;
+  -webkit-animation-timing-function: steps(1, end);
+  -webkit-animation-duration: 2500ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes dot {
@@ -304,6 +309,7 @@ footer h3:hover {
   color: #7cc463;
 }
 
+/* Animation corps du menu grandissant au passage de la souris*/
 .grown {
   cursor: pointer;
 }
@@ -351,15 +357,15 @@ footer h3:hover {
   }
 }
 
-/* Travail du site responsive*/
-@media all and (min-width: 1440px) and (max-width: 2300px) {
+/* Affichage site Grands ecrans 4K*/
+@media all and (min-width: 1500px) and (max-width: 2300px) {
   .Article1 .Menua, .Article1 .Menub {
     width: 40%;
-    height: 800px;
+    height: 850px;
   }
   .Article2 .Menuc, .Article2 .Menud {
     width: 40%;
-    height: 800px;
+    height: 850px;
   }
   .grown {
     margin-top: 130px;
@@ -372,6 +378,7 @@ footer h3:hover {
   }
 }
 
+/*Site responsive: tablettes*/
 @media all and (max-width: 1024px) {
   header h1 {
     font-size: 30px;
@@ -391,6 +398,7 @@ footer h3:hover {
   }
 }
 
+/*Affichage sur smartphone*/
 @media all and (max-width: 750px) {
   footer h3 {
     font-size: 20px;

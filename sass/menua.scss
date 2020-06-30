@@ -153,20 +153,21 @@ h2{
         background-image: -webkit-linear-gradient (right, #f39c7d, #f1585d, #f15c61);
 }
     }
+    /* Animation titre souligné de gauche à droite*/
 h3{
     cursor: pointer;
     &:hover{
 
         &:after {
           width:10%;
-          left: 30%;
+          left: 10%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 30%;
+          left: 10%;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -212,14 +213,14 @@ h3{
 
         &:after {
           width:20%;
-          left: 43%;
+          left: 40%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 43%;
+          left: 40%;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;

@@ -42,15 +42,27 @@ aside{
                 
             display: inline-block;
             animation: dot steps(1,end) 2500ms infinite;
-            content: '';
             -webkit-animation: dot steps(1,end) 2500ms infinite;
+            content: '';
+            -webkit-animation-name: dot;
+            -webkit-animation-timing-function: steps(1,end);
+            -webkit-animation-duration: 2500ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
             }
-            @keyframes dot {
+            @-webkit-keyframes dot {
             0%   { content: ''; }
             25%  { content: '.'; }
             50%  { content: '..'; }
             75%  { content: '...'; }
             100% { content: ''; }
+            }
+            @keyframes dot{
+                0%   { content: ''; }
+                25%  { content: '.'; }
+                50%  { content: '..'; }
+                75%  { content: '...'; }
+                100% { content: ''; }                
             }
 }
     }
@@ -194,6 +206,7 @@ footer{
     }
 
 }}
+/* Animation corps du menu grandissant au passage de la souris*/
     .grown{
         cursor: pointer;
             &:hover{
@@ -219,18 +232,18 @@ footer{
 }
             }
         }
-/* Travail du site responsive*/
-@media all and (min-width:1440px) and (max-width:2300px){
+/* Affichage site Grands ecrans 4K*/
+@media all and (min-width:1500px) and (max-width:2300px){
     .Article1{
         .Menua, .Menub {
             width: 40%;
-            height: 800px;
+            height: 850px;
         }
     }
     .Article2{
         .Menuc, .Menud{
             width: 40%;
-            height: 800px;
+            height: 850px;
         }
     }
     .grown {
@@ -245,6 +258,7 @@ footer{
         margin-top: 150px;
     }
 }
+/*Site responsive: tablettes*/
 @media all and (max-width:1024px){
     header{
         h1{
@@ -264,6 +278,7 @@ footer{
         height: 90px;
     }
 }
+/*Affichage sur smartphone*/
 @media all and (max-width:750px){
     footer{
         h3{

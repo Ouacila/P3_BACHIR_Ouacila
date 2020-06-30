@@ -25,7 +25,7 @@ header h1 {
   padding-top: 70px;
 }
 
-/*Pied de page*/
+/*Pied de page avec deux boutons effets "wiggle"*/
 footer {
   width: 100%;
   height: 100px;
@@ -113,7 +113,7 @@ section {
           justify-content: center;
   margin-bottom: 150px;
   margin-left: 50px;
-  /*Mise en page du 1er article: entrée avec le titre et images sur les côtés*/
+  /*Mise en page du 1er article: entrée avec le titre et images côtés*/
   /*Mise en page du 2e article: plats (titre+images côtés)*/
   /*Mise en page du 3e article: Desserts (titre)*/
 }
@@ -287,13 +287,14 @@ section .Dessert .description {
   margin-left: 200px;
 }
 
+/*Animation titre souligné de gauche à droite*/
 h3 {
   cursor: pointer;
 }
 
 h3:hover:after {
-  width: 30%;
-  left: 35%;
+  width: 25%;
+  left: 37%;
 }
 
 h3:after {
@@ -301,7 +302,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 35%;
+  left: 37%;
   position: absolute;
   background-image: -webkit-linear-gradient(left, #e2943f, #bc7b9c, #905cff);
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -339,6 +340,25 @@ h3:after {
   }
   section footer h4 {
     font-size: 20px;
+  }
+  h3 {
+    cursor: pointer;
+  }
+  h3:hover:after {
+    width: 22%;
+    left: 35%;
+  }
+  h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 35%;
+    position: absolute;
+    background-image: -webkit-linear-gradient(left, #e2943f, #bc7b9c, #905cff);
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
   }
 }
 
@@ -430,7 +450,7 @@ h3:after {
     font-size: 40px;
   }
   section .Dessert .description p {
-    margin-left: -100px;
+    margin-left: -30px;
   }
   section .description p {
     font-size: 40px;

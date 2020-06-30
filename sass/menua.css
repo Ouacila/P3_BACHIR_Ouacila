@@ -220,13 +220,14 @@ h5 .fa-music {
   background-image: -webkit-linear-gradient right, #f39c7d, #f1585d, #f15c61;
 }
 
+/* Animation titre souligné de gauche à droite*/
 h3 {
   cursor: pointer;
 }
 
 h3:hover:after {
   width: 10%;
-  left: 30%;
+  left: 10%;
 }
 
 h3:after {
@@ -234,7 +235,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 30%;
+  left: 10%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -280,7 +281,7 @@ h3 {
 
 h3:hover:after {
   width: 20%;
-  left: 43%;
+  left: 40%;
 }
 
 h3:after {
@@ -288,7 +289,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 43%;
+  left: 40%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
