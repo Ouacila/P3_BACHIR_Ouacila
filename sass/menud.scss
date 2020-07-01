@@ -4,7 +4,7 @@ text-decoration:none;
 } 
 body{
     margin: 0;
-    background-color: #fdfffd;
+    background-color: white;
 }
 /*En tête*/
 header{
@@ -53,14 +53,33 @@ footer{
       }
 }
 /* Section princpale et titre du menu 4*/
+main{
+    h1{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+
+    }
+    margin-bottom: 200px;
+}
 section{
-    width: 90%;
-    margin-bottom: 150px;
+    background-color: #fdfffd;;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+
 
     h2{
         font-family: 'Kaushan Script', cursive;
         font-size: 5rem;
-        margin-left: 430px;
+        text-align: center;
+        margin: auto;
+        padding-top: 50px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: -webkit-linear-gradient(left,#479c3e, #8fcf73, #c2ff87);
@@ -68,7 +87,6 @@ section{
 /*Mise en page des différents articles: titre et images côtés*/
     .Entrée, .Plat, .Dessert{
         width: 100%;
-        margin-left: 5%;
     }
     .Titre{
         width: 100%;
@@ -77,9 +95,14 @@ section{
         margin-top: 50px;
         margin-bottom: 30px;
 
-        .menud1 img, .menud2 img{;
-            width: 110%;
+        .menud1 img{;
+            width: 100%;
             height: 100%;
+    }
+    .menud2 img{
+        width:100%;
+        height: 100%;
+    
     }
         
         h3{
@@ -88,8 +111,8 @@ section{
             font-family: 'Balsamiq Sans', cursive;
             color: black;
             font-size: 1.4rem;
-            padding-left: 130px;
-            padding-right: 100px;
+            padding-left: 40px;
+            padding-right: 60px;
         }
     }
     /* Corps des articles*/
@@ -139,15 +162,15 @@ h3{
     &:hover{
 
         &:after {
-          width:20%;
-          left:40%;
+          width:15%;
+          left:41%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 40%;
+          left: 41%;
           position: absolute;
           background: #7cc463;
           transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -158,40 +181,28 @@ h3{
 @media all and (max-width:1024px)
 {
     section{
-        width: 100%;
-        margin-left: 0;
-    h2{
-        text-align: center;
-        margin: auto;
-    }
-    .Titre{
-        width: 90%;
-
-    .menud1, .menud2{
-        width: 50%;    
-        height: 30%;
-    }}
-    .Entrée, .Plat, .Dessert{
-        width: 90%;
-    }
-    .description{
-        width: 70%;
-        margin-left: -5%;
-    }
-    .prix{
-        p{
-            line-height: 50px;
+   
+        .Titre{
+            width: 100%;
+    
+        .menud1, .menud2{  
+            height: 30%;
+        }}
+        .description{
+            width: 75%;
         }
-        
-
+        .prix{
+            p{
+                line-height: 50px;
+            }
+        }
     }
-}
 h3{
     cursor: pointer;
     &:hover{
 
         &:after {
-          width:15%;
+          width:17%;
           left:40%;
         }}
         &:after {
@@ -247,12 +258,14 @@ section{
             width: 80%;
             margin-left: 5%;
             font-size: 10px;
+            
     }
 }
     .prix{
         p{
             margin-top: -15px;
             font-size: 10px;
+            line-height: 45px;
     }
 }
     }
@@ -262,15 +275,15 @@ h3{
     &:hover{
 
         &:after {
-          width:30%;
-          left:40%;
+          width:35%;
+          left:32%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 40%;
+          left: 32%;
           position: absolute;
           background: #7cc463;
           transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -289,7 +302,6 @@ h3{
     }
     section{
     h2{
-        margin-left: 600px;
         font-size: 7rem;
     }
     .Entrée, .Plat, .Dessert{

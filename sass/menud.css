@@ -5,7 +5,7 @@ a:link {
 
 body {
   margin: 0;
-  background-color: #fdfffd;
+  background-color: white;
 }
 
 /*En tête*/
@@ -106,9 +106,28 @@ footer h4:hover {
 }
 
 /* Section princpale et titre du menu 4*/
+main {
+  margin-bottom: 200px;
+}
+
+main h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
 section {
-  width: 90%;
-  margin-bottom: 150px;
+  background-color: #fdfffd;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-bottom: 50px;
   /*Mise en page des différents articles: titre et images côtés*/
   /* Corps des articles*/
 }
@@ -116,7 +135,9 @@ section {
 section h2 {
   font-family: 'Kaushan Script', cursive;
   font-size: 5rem;
-  margin-left: 430px;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, #479c3e, #8fcf73, #c2ff87);
@@ -124,7 +145,6 @@ section h2 {
 
 section .Entrée, section .Plat, section .Dessert {
   width: 100%;
-  margin-left: 5%;
 }
 
 section .Titre {
@@ -139,8 +159,13 @@ section .Titre {
   margin-bottom: 30px;
 }
 
-section .Titre .menud1 img, section .Titre .menud2 img {
-  width: 110%;
+section .Titre .menud1 img {
+  width: 100%;
+  height: 100%;
+}
+
+section .Titre .menud2 img {
+  width: 100%;
   height: 100%;
 }
 
@@ -150,8 +175,8 @@ section .Titre h3 {
   font-family: 'Balsamiq Sans', cursive;
   color: black;
   font-size: 1.4rem;
-  padding-left: 130px;
-  padding-right: 100px;
+  padding-left: 40px;
+  padding-right: 60px;
 }
 
 section .intitulea {
@@ -206,8 +231,8 @@ h3 {
 }
 
 h3:hover:after {
-  width: 20%;
-  left: 40%;
+  width: 15%;
+  left: 41%;
 }
 
 h3:after {
@@ -215,7 +240,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 40%;
+  left: 41%;
   position: absolute;
   background: #7cc463;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -225,27 +250,14 @@ h3:after {
 
 /*Site responsive: tablettes*/
 @media all and (max-width: 1024px) {
-  section {
-    width: 100%;
-    margin-left: 0;
-  }
-  section h2 {
-    text-align: center;
-    margin: auto;
-  }
   section .Titre {
-    width: 90%;
+    width: 100%;
   }
   section .Titre .menud1, section .Titre .menud2 {
-    width: 50%;
     height: 30%;
   }
-  section .Entrée, section .Plat, section .Dessert {
-    width: 90%;
-  }
   section .description {
-    width: 70%;
-    margin-left: -5%;
+    width: 75%;
   }
   section .prix p {
     line-height: 50px;
@@ -254,7 +266,7 @@ h3:after {
     cursor: pointer;
   }
   h3:hover:after {
-    width: 15%;
+    width: 17%;
     left: 40%;
   }
   h3:after {
@@ -309,20 +321,21 @@ h3:after {
   section .Entrée .prix p, section .Plat .prix p, section .Dessert .prix p {
     margin-top: -15px;
     font-size: 10px;
+    line-height: 45px;
   }
   h3 {
     cursor: pointer;
   }
   h3:hover:after {
-    width: 30%;
-    left: 40%;
+    width: 35%;
+    left: 32%;
   }
   h3:after {
     background: none repeat scroll 0 0 transparent;
     content: "";
     display: block;
     height: 4px;
-    left: 40%;
+    left: 32%;
     position: absolute;
     background: #7cc463;
     -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -340,7 +353,6 @@ h3:after {
     height: 200px;
   }
   section h2 {
-    margin-left: 600px;
     font-size: 7rem;
   }
   section .Entrée .Titre .menud1 img, section .Entrée .Titre .menud2 img, section .Plat .Titre .menud1 img, section .Plat .Titre .menud2 img, section .Dessert .Titre .menud1 img, section .Dessert .Titre .menud2 img {

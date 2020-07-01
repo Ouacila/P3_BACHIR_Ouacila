@@ -4,7 +4,7 @@ a:link {
 }
 
 body {
-  background-color: #fcdfdb;
+  background-color: white;
   margin: 0;
 }
 
@@ -105,20 +105,35 @@ footer h4:hover {
 }
 
 /*Section principale avec titre du menu 1*/
-section {
+main {
   margin-bottom: 150px;
-  width: 90%;
+}
+
+main h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
+section {
+  background-color: #fcdfdb;
+  width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 70px;
+  margin: auto;
+  padding-bottom: 100px;
 }
 
 section .fa-music {
   display: block;
   text-align: center;
   margin: auto;
-  margin-top: 20px;
+  padding-top: 30px;
   font-size: 5rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -140,7 +155,15 @@ section h2 {
   margin-left: 40px;
 }
 
-.Titre {
+.Entrée h3, .Plat h3, .Dessert h3 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  padding-left: 150px;
+}
+
+.Entrée .Titre {
   width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -151,22 +174,57 @@ section h2 {
   margin-bottom: 30px;
 }
 
-.Titre .menua1 img {
-  width: 160%;
+.Entrée .Titre .menua1 img {
+  width: 150%;
+  margin-right: 5%;
 }
 
-.Titre .menua2 img {
-  width: 160%;
+.Entrée .Titre .menua2 img {
+  width: 150%;
   height: 60%;
   margin-top: 10px;
 }
 
-.Titre h3 {
-  font-family: 'Architects Daughter', cursive;
-  font-size: 2rem;
-  text-align: center;
-  margin: auto;
-  padding-left: 150px;
+.Plat .Titre {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.Plat .Titre .menua1 img {
+  width: 150%;
+}
+
+.Plat .Titre .menua2 img {
+  width: 150%;
+  height: 30%;
+  margin-top: 10px;
+}
+
+.Dessert .Titre {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.Dessert .Titre .menua1 img {
+  width: 150%;
+}
+
+.Dessert .Titre .menua2 img {
+  width: 150%;
+  height: 30%;
+  margin-top: 10px;
 }
 
 /*Corps des articles: même configuration*/
@@ -194,7 +252,7 @@ section h2 {
   font-weight: bold;
   color: #3d1319;
   position: absolute;
-  right: 120px;
+  right: 180px;
 }
 
 /* Bas de page menu1 avec la note de musique*/
@@ -205,15 +263,16 @@ h5 {
   font-family: 'Devonshire', sans-serif;
   font-size: 3rem;
   color: #3d1319;
-  width: 60%;
+  width: 70%;
   text-align: center;
   margin: auto;
+  padding-bottom: 100px;
 }
 
 h5 .fa-music {
   display: block;
   font-size: 4rem;
-  margin-top: 5px;
+  margin-top: -20px;
   margin-right: 15px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -227,7 +286,7 @@ h3 {
 
 h3:hover:after {
   width: 10%;
-  left: 10%;
+  left: 45%;
 }
 
 h3:after {
@@ -235,7 +294,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 10%;
+  left: 45%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -251,13 +310,18 @@ h3:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 50px;
   }
   .Titre h3 {
     font-size: 30px;
     margin-right: 60px;
   }
+  .Titre .menua1 img {
+    margin-top: 15px;
+  }
   .Titre .menua2 img {
-    height: 20%;
+    height: 10%;
+    margin-bottom: 10px;
   }
   .description {
     width: 80%;
@@ -271,8 +335,13 @@ h3:after {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
+}
+
+h5 {
+  padding-top: 15%;
+  padding-bottom: 0px;
 }
 
 h3 {
@@ -337,6 +406,7 @@ h3:after {
     width: 80%;
     text-align: center;
     margin: auto;
+    padding-bottom: 0px;
   }
   .Pied .fa-music {
     font-size: 20px;
@@ -367,9 +437,6 @@ h3:after {
 
 /*Site grands écrans 4K*/
 @media all and (min-width: 1500px) and (max-width: 2300px) {
-  section {
-    margin-left: 150px;
-  }
   section h2 {
     font-size: 5rem;
   }
@@ -393,6 +460,28 @@ h3:after {
   }
   .Titre h3 {
     font-size: 40px;
+  }
+  h5 {
+    margin-bottom: 100px;
+  }
+  h3 {
+    cursor: pointer;
+  }
+  h3:hover:after {
+    width: 15%;
+    left: 40%;
+  }
+  h3:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 40%;
+    position: absolute;
+    background: #3d1319;
+    -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
   }
 }
 /*# sourceMappingURL=menua.css.map */

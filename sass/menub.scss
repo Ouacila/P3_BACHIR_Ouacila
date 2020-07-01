@@ -4,7 +4,7 @@ text-decoration:none;
 } 
 body{
     margin: 0;
-    background-color: #fff5fe;
+    background-color: white;
 }
 /*Mise en page de l'en-tête*/
 header{
@@ -53,11 +53,24 @@ footer{
       }
   }
 /* Section princpale et titre du menu 2*/
+main{
+    h1{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+
+    }
+    margin-bottom: 200px;
+}
 section{
-    width: 90%;
+    background-color: #fff5fe ;
+    width: 80%;
     justify-content: center;
-    margin-bottom: 150px;
-    margin-left: 50px;
+    margin: auto;
 
     h2{
         font-family:'Croissant One', cursive;
@@ -67,6 +80,7 @@ section{
         background-image: -webkit-linear-gradient(left,#e2943f, #bc7b9c, #905cff);
         text-align: center;
         margin: auto;
+        padding-top: 50px;
     }
 /*Mise en page du 1er article: entrée avec le titre et images côtés*/
     .Entrée{
@@ -80,12 +94,13 @@ section{
         margin-bottom: 30px;
 }
         .menuba1 img{
-            width: 140%;
-            height: 80%;
+            width: 110%;
+            height: 100%;
 }
         .menuba2 img{
-            width: 140%;
-            height: 80%;
+            width: 135%;
+            height: 100%;
+            margin-right: -60px;
 }
         h3{
         text-align: center;
@@ -93,7 +108,7 @@ section{
         font-family:  'Roboto Slab', serif;
         color: #e2943f;
         font-size: 1.5rem;
-        padding-left: 120px;
+        padding-left: 50px;
     }
 
 /*Corps des entrées*/
@@ -127,12 +142,13 @@ section{
             margin-bottom: 30px;
         }
         .menubb1 img{
-            width: 140%;
+            width: 120%;
             height: 80%;
 }
         .menubb2 img{
-           width: 140%;
+           width: 135%;
            height: 80%;
+           margin-right: -60px;
 }
         h3{
             text-align: center;
@@ -140,7 +156,7 @@ section{
             font-family:  'Roboto Slab', serif;
             color: #bc7b9c;
             font-size: 1.5rem;
-            padding-left: 100px;
+            padding-left: 60px;
 
         }
 /*Corps des plats*/
@@ -172,12 +188,13 @@ section{
             justify-content: space-around;
             margin-bottom: 30px;
             .menubc1 img{
-                width: 140%;
+                width: 125%;
                 height: 80%;
 }
             .menubc2 img{
-                width: 140%;
+                width: 130%;
                 height: 80%;
+                margin-right: -60px;
 }
             h3{
                 text-align: center;
@@ -193,7 +210,8 @@ section{
                 font-family:'Roboto Slab', serif;
                 font-size: 1.5rem;
                 color: #905cff;
-                margin-left: 200px;
+                margin-left: 130px;
+                padding-bottom: 50px;
         }
     }
 }
@@ -222,7 +240,7 @@ h3{
 /*Sites sur tablette*/
 @media all and (max-width:1024px){
     section{
-        width: 90%;
+        width: 100%;
         margin-right: 0;
         margin-left: 0;
     .Entrée{
@@ -238,9 +256,9 @@ h3{
     }
     .Plat{
         .description{
-        margin-left: 5%;
+            margin-left: 5%;
+        }
     }
-}
       .prix{
             margin-right: -15%;
         }
@@ -259,15 +277,15 @@ h3{
     &:hover{
 
         &:after {
-          width:22%;
-          left:35%;
+          width:24%;
+          left:40%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 35%;
+          left: 40%;
           position: absolute;
           background-image: -webkit-linear-gradient(left,#e2943f, #bc7b9c, #905cff);
           transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -302,8 +320,8 @@ h3{
             width: 100%;
 
         h3{
-            margin-left: -20%;
-            font-size: 20px;
+        
+           padding-right: 10%;
         }
     }
 }
@@ -311,8 +329,8 @@ h3{
     .Titre{
         width: 100%;
     h3{
-        margin-left: -10%;
-        font-size: 20px;
+        padding-right: 10%;
+        
     }
 }
 .intitule{
@@ -325,8 +343,7 @@ h3{
         .Titre{
             width: 100%;
             h3{
-                margin-left: -10%;
-                font-size: 20px;
+                padding-right: 18%;
             }
         }
     }
@@ -412,7 +429,7 @@ h3{
             &:hover{
         
                 &:after {
-                  width:23%;
+                  width:27%;
                   left:35%;
                 }}
                 &:after {

@@ -3,8 +3,8 @@ a:link
 text-decoration:none; 
 } 
 body{
-    background-color: #fcdfdb;
-    margin: 0;
+    background-color: white;
+    margin:0;
 }
 /*En tête*/
 header{
@@ -53,17 +53,31 @@ footer{
 }
 
 /*Section principale avec titre du menu 1*/
-section{
+main{
+    h1{
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: black;
+        font-size: 3rem;
+        text-align: center;
+        margin: auto;
+
+    }
     margin-bottom: 150px;
-    width: 90%;
+}
+section{
+    background-color: #fcdfdb;
+    width: 80%;
     justify-content: center;
-    margin-left: 70px;
+    margin: auto;
+    padding-bottom: 100px;
 
 .fa-music{
     display: block;
     text-align: center;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 30px;
     font-size: 5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -83,23 +97,6 @@ h2{
     width: 80%;
     margin-bottom: 20px;
     margin-left: 40px;
-}
-.Titre{
-    width: 100%;
-    display: inline-flex;
-    margin-top: 50px;
-    justify-content: space-around;
-    margin-bottom: 30px;
-
-    .menua1 img{
-       width: 160%;
-}
-    .menua2 img{
-       width: 160%;
-       height: 60%;
-       margin-top: 10px;
-}
-
     h3{
         font-family: 'Architects Daughter', cursive;
         font-size: 2rem;
@@ -108,6 +105,64 @@ h2{
         padding-left: 150px;
     }
 }
+.Entrée{
+.Titre{
+    width: 100%;
+    display: inline-flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    .menua1 img{
+       width: 150%;
+       margin-right: 5%;
+}
+    .menua2 img{
+       width: 150%;
+       height: 60%;
+       margin-top: 10px;
+}
+}
+}
+.Plat{
+    .Titre{
+        width: 100%;
+        display: inline-flex;
+        margin-top: 50px;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    
+        .menua1 img{
+           width: 150%;
+    }
+        .menua2 img{
+           width: 150%;
+           height: 30%;
+           margin-top: 10px;
+    }
+    }
+}
+.Dessert{
+    .Titre{
+        width: 100%;
+        display: inline-flex;
+        margin-top: 50px;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    
+        .menua1 img{
+           width: 150%;
+    }
+        .menua2 img{
+           width: 150%;
+           height: 30%;
+           margin-top: 10px;
+    }
+    }
+}
+
+  
+
 /*Corps des articles: même configuration*/
 .intitule{
     display: inline-flex;
@@ -129,7 +184,7 @@ h2{
         font-weight: bold;
         color: #3d1319;
         position: absolute;
-        right: 120px;
+        right: 180px;
 
     
     }
@@ -139,14 +194,15 @@ h2{
         font-family: 'Devonshire', sans-serif;
         font-size: 3rem;
         color: #3d1319;
-        width: 60%;
+        width: 70%;
         text-align: center;
         margin: auto;
+        padding-bottom: 100px;
 
     .fa-music {
         display: block;
         font-size: 4rem;
-        margin-top: 5px;
+        margin-top: -20px;
         margin-right: 15px;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -160,26 +216,28 @@ h3{
 
         &:after {
           width:10%;
-          left: 10%;
+          left: 45%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 10%;
+          left: 45%;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;
           width: 0;
         }
       }
+
 /* Mise en page du responsive tablette*/
 @media all and (max-width:1024px){
     section{
         width: 100%;
         margin: 0;
         justify-content: center;
+        padding-bottom: 50px;
     }
     
     .Titre{
@@ -187,8 +245,12 @@ h3{
         font-size: 30px;
         margin-right: 60px;
         }
+    .menua1 img{
+        margin-top: 15px;
+    }
     .menua2 img{
-        height: 20%;
+        height: 10%;
+        margin-bottom: 10px;
     }
 }
     .description{
@@ -203,9 +265,13 @@ h3{
         width: 100%;
         justify-content: center;
         margin: auto;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
     }
 
+}
+h5{
+    padding-top: 15%;
+    padding-bottom: 0px;
 }
 h3{
     cursor: pointer;
@@ -276,6 +342,7 @@ h2{
         width: 80%;
         text-align: center;
         margin: auto;
+        padding-bottom: 0px;
         .fa-music{
             font-size: 20px;
         }
@@ -302,12 +369,11 @@ h3{
           transition: width 1s ease 0s, right 0.5s ease 0s;
           width: 0;
         }
-      }   
+      }  
 }
 /*Site grands écrans 4K*/
 @media all and (min-width:1500px) and (max-width:2300px)
 {   section{
-    margin-left: 150px; 
     h2{
         font-size: 5rem;
     }
@@ -338,4 +404,27 @@ h3{
                 font-size: 40px;
             }
         }
+        h5{
+            margin-bottom: 100px;
+        }
+        h3{
+            cursor: pointer;
+            &:hover{
+        
+                &:after {
+                  width:15%;
+                  left: 40%;
+                }}
+                &:after {
+                  background: none repeat scroll 0 0 transparent;
+                  content: "";
+                  display: block;
+                  height: 4px;
+                  left: 40%;
+                  position: absolute;
+                  background: #3d1319;
+                  transition: width 1s ease 0s, right 0.5s ease 0s;
+                  width: 0;
+                }
+              }  
 }

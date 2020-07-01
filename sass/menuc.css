@@ -5,7 +5,7 @@ a:link {
 
 body {
   margin: 0;
-  background-color: #edefef;
+  background-color: white;
 }
 
 /* En tête*/
@@ -25,7 +25,7 @@ header h1 {
   padding-top: 70px;
 }
 
-/* Pied de page+ 2boutons effet "wiggle"*/
+/* Pied de page + 2 boutons effet "wiggle"*/
 footer {
   width: 100%;
   height: 100px;
@@ -106,13 +106,27 @@ footer h4:hover {
 }
 
 /* Section principale avec les différents articles+ titre du menu*/
+main {
+  margin-bottom: 200px;
+}
+
+main h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
 section {
-  width: 90%;
+  background-color: #edefef;
+  width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 200px;
-  margin-left: 90px;
+  margin: auto;
   /* Mise en place des articles: titre et images (même configuration pour chaque article)*/
   /*Corps des articles*/
   /* Corps dessert*/
@@ -124,6 +138,7 @@ section h2 {
   color: #0082fb;
   text-align: center;
   margin: auto;
+  padding-top: 50px;
 }
 
 section .Entrée, section .Plat, section .Dessert {
@@ -132,25 +147,28 @@ section .Entrée, section .Plat, section .Dessert {
 }
 
 section .Titre {
+  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 2%;
   margin-top: 70px;
   margin-bottom: 30px;
 }
 
 section .Titre .menuc1 img {
-  width: 130%;
-  height: 110%;
+  width: 125%;
+  height: 60%;
 }
 
 section .Titre .menuc2 img {
-  width: 130%;
-  height: 85%;
-  margin-top: 5px;
+  width: 125%;
+  height: 40%;
+  margin-top: 3%;
+  margin-right: -10px;
 }
 
 section .Titre h3 {
@@ -159,8 +177,8 @@ section .Titre h3 {
   font-family: 'Shadows Into Light Two', cursive;
   color: black;
   font-size: 1.5rem;
-  padding-left: 145px;
-  padding-right: 50px;
+  padding-left: 120px;
+  padding-right: 30px;
 }
 
 section .intitule {
@@ -193,6 +211,7 @@ section .intitulec {
   display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 50px;
 }
 
 section .intitulec .description {
@@ -216,7 +235,7 @@ h3 {
 
 h3:hover:after {
   width: 20%;
-  left: 38%;
+  left: 40%;
 }
 
 h3:after {
@@ -224,7 +243,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 38%;
+  left: 40%;
   position: absolute;
   background: #0082fb;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;
@@ -236,9 +255,6 @@ h3:after {
 @media all and (max-width: 1024px) {
   .menuc1, .menuc2 {
     height: 70%;
-  }
-  section {
-    margin-left: 5%;
   }
   section .intitulec {
     width: 45%;
@@ -292,7 +308,7 @@ h3:after {
     margin-right: 0px;
   }
   section .Entrée .Titre, section .Plat .Titre, section .Dessert .Titre {
-    width: 100%;
+    width: 90%;
   }
   section .Entrée .Titre h3, section .Plat .Titre h3, section .Dessert .Titre h3 {
     font-size: 20px;
@@ -327,30 +343,33 @@ h3:after {
   footer {
     height: 200px;
   }
-  section h2 {
+  main {
+    margin-bottom: 300px;
+  }
+  main section h2 {
     font-size: 7rem;
     margin-bottom: 100px;
   }
-  .Entrée .Titre, .Plat .Titre, .Dessert .Titre {
+  main .Entrée .Titre, main .Plat .Titre, main .Dessert .Titre {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
   }
-  .Entrée .Titre h3, .Plat .Titre h3, .Dessert .Titre h3 {
+  main .Entrée .Titre h3, main .Plat .Titre h3, main .Dessert .Titre h3 {
     font-size: 50px;
   }
-  .description p {
+  main .description p {
     font-size: 45px;
   }
-  .prix p {
+  main .prix p {
     font-size: 50px;
   }
-  .Plat .intitule .description {
+  main .Plat .intitule .description {
     margin-left: -70px;
   }
-  .Dessert .intitulec .description {
+  main .Dessert .intitulec .description {
     margin-left: -150px;
   }
 }
