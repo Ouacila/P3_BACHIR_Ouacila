@@ -160,11 +160,11 @@ section h2 {
   font-size: 2rem;
   text-align: center;
   margin: auto;
-  padding-left: 150px;
+  padding-left: 130px;
 }
 
 .Entrée .Titre {
-  width: 100%;
+  width: 105%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -175,18 +175,18 @@ section h2 {
 }
 
 .Entrée .Titre .menua1 img {
-  width: 150%;
+  width: 140%;
   margin-right: 5%;
 }
 
 .Entrée .Titre .menua2 img {
-  width: 150%;
+  width: 140%;
   height: 60%;
   margin-top: 10px;
 }
 
 .Plat .Titre {
-  width: 100%;
+  width: 105%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -197,17 +197,17 @@ section h2 {
 }
 
 .Plat .Titre .menua1 img {
-  width: 150%;
+  width: 140%;
 }
 
 .Plat .Titre .menua2 img {
-  width: 150%;
+  width: 140%;
   height: 30%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .Dessert .Titre {
-  width: 100%;
+  width: 105%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -218,13 +218,13 @@ section h2 {
 }
 
 .Dessert .Titre .menua1 img {
-  width: 150%;
+  width: 140%;
 }
 
 .Dessert .Titre .menua2 img {
-  width: 150%;
+  width: 140%;
   height: 30%;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 /*Corps des articles: même configuration*/
@@ -286,7 +286,7 @@ h3 {
 
 h3:hover:after {
   width: 10%;
-  left: 45%;
+  left: 52%;
 }
 
 h3:after {
@@ -294,7 +294,7 @@ h3:after {
   content: "";
   display: block;
   height: 4px;
-  left: 45%;
+  left: 52%;
   position: absolute;
   background: #3d1319;
   -webkit-transition: width 1s ease 0s, right 0.5s ease 0s;

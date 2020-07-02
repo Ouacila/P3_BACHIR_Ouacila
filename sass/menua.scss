@@ -102,23 +102,24 @@ h2{
         font-size: 2rem;
         text-align: center;
         margin: auto;
-        padding-left: 150px;
+        padding-left: 130px;
+        
     }
 }
 .Entrée{
 .Titre{
-    width: 100%;
+    width: 105%;
     display: inline-flex;
     margin-top: 50px;
     justify-content: space-around;
     margin-bottom: 30px;
 
     .menua1 img{
-       width: 150%;
+       width: 140%;
        margin-right: 5%;
 }
     .menua2 img{
-       width: 150%;
+       width: 140%;
        height: 60%;
        margin-top: 10px;
 }
@@ -126,37 +127,37 @@ h2{
 }
 .Plat{
     .Titre{
-        width: 100%;
+        width: 105%;
         display: inline-flex;
         margin-top: 50px;
         justify-content: space-around;
         margin-bottom: 30px;
     
         .menua1 img{
-           width: 150%;
+           width: 140%;
     }
         .menua2 img{
-           width: 150%;
+           width: 140%;
            height: 30%;
-           margin-top: 10px;
+           margin-top: 15px;
     }
     }
 }
 .Dessert{
     .Titre{
-        width: 100%;
+        width: 105%;
         display: inline-flex;
         margin-top: 50px;
         justify-content: space-around;
         margin-bottom: 30px;
     
         .menua1 img{
-           width: 150%;
+           width: 140%;
     }
         .menua2 img{
-           width: 150%;
+           width: 140%;
            height: 30%;
-           margin-top: 10px;
+           margin-top: 15px;
     }
     }
 }
@@ -216,14 +217,14 @@ h3{
 
         &:after {
           width:10%;
-          left: 45%;
+          left: 52%;
         }}
         &:after {
           background: none repeat scroll 0 0 transparent;
           content: "";
           display: block;
           height: 4px;
-          left: 45%;
+          left: 52%;
           position: absolute;
           background: #3d1319;
           transition: width 1s ease 0s, right 0.5s ease 0s;
