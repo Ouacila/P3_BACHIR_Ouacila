@@ -198,7 +198,7 @@ footer h3:hover {
 }
 
 .Article1 .Menua .fa-music {
-  margin-top: 120px;
+  margin-top: 130px;
   font-size: 3rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -228,7 +228,7 @@ footer h3:hover {
 }
 
 .Article1 .Menub h2 {
-  margin-top: 190px;
+  margin-top: 200px;
   font-family: 'Croissant One', cursive;
   font-size: 1.5rem;
   -webkit-background-clip: text;
@@ -269,7 +269,7 @@ footer h3:hover {
 }
 
 .Article2 .Menuc h2 {
-  margin-top: 190px;
+  margin-top: 200px;
   font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   -webkit-background-clip: text;
@@ -294,7 +294,7 @@ footer h3:hover {
 }
 
 .Article2 .Menud h2 {
-  margin-top: 190px;
+  margin-top: 200px;
   font-family: 'Kaushan Script', cursive;
   font-size: 2rem;
   -webkit-background-clip: text;
@@ -333,7 +333,7 @@ footer h3:hover {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 
@@ -352,7 +352,7 @@ footer h3:hover {
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 
@@ -394,6 +394,7 @@ footer h3:hover {
   aside {
     width: 70%;
     height: 90px;
+    margin-bottom: 15%;
   }
 }
 

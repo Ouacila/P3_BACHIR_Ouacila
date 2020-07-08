@@ -316,11 +316,11 @@ h3:after {
   section .Entrée .description p, section .Plat .description p, section .Dessert .description p {
     width: 80%;
     margin-left: 5%;
-    font-size: 10px;
+    font-size: 12px;
   }
   section .Entrée .prix p, section .Plat .prix p, section .Dessert .prix p {
-    margin-top: -15px;
-    font-size: 10px;
+    margin-top: -8px;
+    font-size: 12px;
     line-height: 45px;
   }
   h3 {

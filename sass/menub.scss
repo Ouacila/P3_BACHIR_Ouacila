@@ -352,13 +352,15 @@ h3{
 .description{
     p{
         width: 80%;
-        font-size: 10px;
+        font-size: 13px;
+        margin-top: 15px;
 }
 }
 .prix{
     p{
         width: 10%;
         font-size: 15px;
+        margin-top: 20px;
         margin-right: -150px;
     }
 }
@@ -409,8 +411,10 @@ h3{
             }
         }
         .description{
+            width:100%;
             p{
-                margin-left: -30px;
+                justify-content: left;
+                margin-left: -7%;
             }
         }
     }

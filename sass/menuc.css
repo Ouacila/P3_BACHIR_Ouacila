@@ -321,13 +321,13 @@ h3:after {
     margin-left: -5%;
   }
   section .description p {
-    width: 80%;
+    width: 90%;
     margin-left: 5%;
-    font-size: 10px;
+    font-size: 12px;
   }
   section .prix p {
-    margin-top: 10%;
-    font-size: 15px;
+    margin-top: 13px;
+    font-size: 13px;
   }
   section .Dessert {
     width: 100%;
@@ -360,17 +360,32 @@ h3:after {
   main .Entrée .Titre h3, main .Plat .Titre h3, main .Dessert .Titre h3 {
     font-size: 50px;
   }
+  main .menuc1 {
+    height: 20%;
+    margin-top: 1%;
+  }
+  main .menuc2 {
+    height: 30%;
+    margin-top: 1%;
+  }
+  main .Entrée .intitule .description {
+    margin-left: 3%;
+  }
   main .description p {
     font-size: 45px;
   }
   main .prix p {
     font-size: 50px;
   }
+  main .Plat .intitule {
+    width: 100%;
+  }
   main .Plat .intitule .description {
-    margin-left: -70px;
+    width: 70%;
+    margin-left: -23%;
   }
   main .Dessert .intitulec .description {
-    margin-left: -150px;
+    margin-left: -10%;
   }
 }
 /*# sourceMappingURL=menuc.css.map */

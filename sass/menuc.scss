@@ -258,15 +258,15 @@ h3{
         }
         .description{
             p{
-                width: 80%;
+                width: 90%;
                 margin-left: 5%;
-                font-size: 10px;
+                font-size: 12px;
             }
         }
         .prix{
             p{
-                margin-top: 10%;
-                font-size: 15px;
+                margin-top: 13px;
+                font-size: 13px;
             }
         }
         .Dessert{
@@ -302,9 +302,24 @@ h3{
             }
         }
     }
+    .menuc1{
+        height: 20%;
+        margin-top: 1%;
+    }
+    .menuc2{
+        height: 30%;
+        margin-top: 1%;
+    }
+    .Entrée{
+        .intitule{
+            .description{
+                margin-left: 3%;
+            }
+        }
+    }
     .description{
         p{
-            font-size: 45px;
+            font-size: 45px;;
         }
     }
     .prix{
@@ -314,15 +329,19 @@ h3{
     }
     .Plat{
         .intitule{
+            width: 100%;
             .description{
-                margin-left: -70px;
+              width: 70%;
+              margin-left: -23%;
+            
             }
         }
     }
     .Dessert{
         .intitulec{
             .description{
-        margin-left: -150px;
+                margin-left: -10%;
+
     }
 }}
 }
